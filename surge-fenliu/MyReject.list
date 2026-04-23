@@ -1,0 +1,36 @@
+# === 广告联盟与隐私追踪阻断 ===
+DOMAIN-SUFFIX,ad-sdk-config.youdao.com
+DOMAIN-SUFFIX,gorgon.youdao.com
+DOMAIN-SUFFIX,dsp-impr2.youdao.com
+DOMAIN-SUFFIX,ydpushserver.youdao.com
+DOMAIN-SUFFIX,rdelivery.qq.com
+DOMAIN-SUFFIX,msmp.abchina.com.cn
+DOMAIN-SUFFIX,gdtimg.com
+DOMAIN-SUFFIX,ugdtimg.com
+DOMAIN-SUFFIX,uyunad.com
+DOMAIN-SUFFIX,hyzhihe.com
+DOMAIN-SUFFIX,xdrig.com
+DOMAIN-SUFFIX,rayjump.com
+DOMAIN,pingma.qq.com
+DOMAIN,adimage.bwton.com
+DOMAIN,inner-report.shunchangzhixing.com
+DOMAIN-SUFFIX,xwuad.com
+DOMAIN-SUFFIX,bdurl.net
+DOMAIN-SUFFIX,ahdohpiechei.com
+DOMAIN-KEYWORD,mobads
+DOMAIN-SUFFIX,adkwai.com
+DOMAIN-SUFFIX,1rtb.net
+DOMAIN-SUFFIX,1rtb.com
+DOMAIN-SUFFIX,bayescom.com
+DOMAIN-SUFFIX,cpatrk.net
+DOMAIN-SUFFIX,bugly.qq.com
+
+# === 屏蔽苹果 OTA 系统更新 ===
+DOMAIN,mesu.apple.com
+DOMAIN,gdmf.apple.com
+DOMAIN,updates-http.cdn-apple.com
+DOMAIN,swscan.apple.com
+DOMAIN,swquery.apple.com
+DOMAIN,swdownload.apple.com
+DOMAIN,swcdn.apple.com
+DOMAIN,swdist.apple.com
