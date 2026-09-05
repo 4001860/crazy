@@ -1,6 +1,6 @@
 {
   "name": "Crazy IconSet",
-  "description": "Crazy 自用 Surge 图标集 (共 62 个精选图标)",
+  "description": "Crazy 自用 Surge 图标集 (共 63 个精选图标)",
   "icons": [
     {
       "name": "AdBlack",
@@ -41,6 +41,10 @@
     {
       "name": "China",
       "url": "https://raw.githubusercontent.com/4001860/crazy/main/surge-ico/China.png"
+    },
+    {
+      "name": "Cyclone",
+      "url": "https://raw.githubusercontent.com/4001860/crazy/main/surge-ico/Cyclone.png"
     },
     {
       "name": "Direct",
