@@ -1,0 +1,4 @@
+# --- SafePal 硬件钱包专属规则集 ---
+DOMAIN-KEYWORD,safepal
+DOMAIN-SUFFIX,safepal.com
+DOMAIN-SUFFIX,safepal.io

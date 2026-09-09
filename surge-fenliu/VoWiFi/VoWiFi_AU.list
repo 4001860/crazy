@@ -1,0 +1,7 @@
+# --- VoWiFi 专项分流规则集 (VoWiFi-澳大利亚) ---
+# 适用运营商 ePDG 域名及核心网网段
+
+DOMAIN-SUFFIX,epdg.epc.mnc001.mcc505.pub.3gppnetwork.org
+IP-CIDR,149.135.0.0/16,no-resolve
+DOMAIN-SUFFIX,epdg.epc.mnc002.mcc505.pub.3gppnetwork.org
+DOMAIN-SUFFIX,epdg.epc.mnc003.mcc505.pub.3gppnetwork.org

@@ -1,0 +1,3 @@
+# --- N26 银行专属规则集 ---
+DOMAIN-KEYWORD,n26
+DOMAIN-SUFFIX,n26.com

@@ -1,0 +1,5 @@
+# --- Claude / Anthropic 专属规则集 ---
+DOMAIN-KEYWORD,anthropic
+DOMAIN-KEYWORD,claude
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,anthropic.com
