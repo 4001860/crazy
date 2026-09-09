@@ -284,13 +284,59 @@ DOMAIN-SUFFIX,migucloud.com
 DOMAIN-SUFFIX,migu.cn
 DOMAIN-KEYWORD,10086
 DOMAIN-KEYWORD,cmcc
+# --- 中国电信 / 小翼管家 (天翼智慧家庭/天翼云/天翼看家/设备平台) ---
 DOMAIN-SUFFIX,189.cn
-DOMAIN-SUFFIX,21cn.com
-DOMAIN-SUFFIX,ctwing.cn
+DOMAIN-SUFFIX,189jk.cn
+DOMAIN-SUFFIX,189qas.com
+DOMAIN-SUFFIX,chinatelecom.cn
 DOMAIN-SUFFIX,chinatelecom.com.cn
+DOMAIN-SUFFIX,chinatelecom.net.cn
+DOMAIN-SUFFIX,chntel.com
 DOMAIN-SUFFIX,ct10000.com
+# 小翼管家设备通信与物联控制核心
 DOMAIN-SUFFIX,xiaoyi.cn
+DOMAIN-SUFFIX,tydevice.com
+DOMAIN-SUFFIX,tydevice.cn
+DOMAIN-SUFFIX,tysmart.cn
+DOMAIN-SUFFIX,tysmart.com
+DOMAIN-SUFFIX,tyiot.cn
+DOMAIN-SUFFIX,esurfing.cn
+DOMAIN-SUFFIX,esurfing.com.cn
+DOMAIN-SUFFIX,smartlife189.com
+DOMAIN-SUFFIX,ctwing.cn
+DOMAIN-SUFFIX,ctwing.com.cn
+# 天翼统一认证体系 (手机号一键登录/Token免密鉴权，小翼管家登录死锁根源)
+DOMAIN-SUFFIX,id6.me
+DOMAIN-SUFFIX,zzx9.cn
+DOMAIN-SUFFIX,cmpassport.com
+# 天翼云 (小翼管家核心后端、微服务接口与视频流)
+DOMAIN-SUFFIX,ctyun.cn
+DOMAIN-SUFFIX,ctyun.com.cn
+DOMAIN-SUFFIX,ctyunapi.cn
+DOMAIN-SUFFIX,ctyuncdn.cn
+DOMAIN-SUFFIX,ctyuncdn.com
+DOMAIN-SUFFIX,ctyuncdn.net
+DOMAIN-SUFFIX,ctyunwaf.com
+DOMAIN-SUFFIX,ctyuninner.com
+# 电信 CDN & DNS 网络
+DOMAIN-SUFFIX,ctcdn.cn
+DOMAIN-SUFFIX,ctcdn.com
+DOMAIN-SUFFIX,ctdns.cn
+DOMAIN-SUFFIX,ctlcdn.cn
+DOMAIN-SUFFIX,ctmcdn.cn
+DOMAIN-SUFFIX,ctycdn.cn
+DOMAIN-SUFFIX,ctxcdn.cn
+DOMAIN-SUFFIX,ctzcdn.cn
+DOMAIN-SUFFIX,21cn.com
+DOMAIN-SUFFIX,21cn.net
+DOMAIN-SUFFIX,21cnimg.com
+DOMAIN-SUFFIX,hicdma.com
 DOMAIN-KEYWORD,chinatelecom
+DOMAIN-KEYWORD,tydevice
+DOMAIN-KEYWORD,ctyun
+DOMAIN-KEYWORD,ctwing
+DOMAIN-KEYWORD,esurfing
+DOMAIN-KEYWORD,xiaoyi
 # 翼支付
 DOMAIN-SUFFIX,bestpay.com.cn
 DOMAIN-SUFFIX,bestpay.cn
