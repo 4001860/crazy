@@ -1,0 +1,11 @@
+# --- TestFlight 专属分流规则集 ---
+# 适用场景：解决国区 TestFlight 打开慢、无法载入邀请、公测应用打不开的问题
+# 策略推荐：节点选择 / 代理
+
+# 核心 API 与元数据
+DOMAIN,testflight.apple.com
+DOMAIN,beta.itunes.apple.com
+DOMAIN-SUFFIX,testflight.apple.com
+
+# TestFlight 消息通知与测试分发
+DOMAIN-KEYWORD,testflight

@@ -1,0 +1,9 @@
+# --- 苹果系统升级屏蔽规则集 ---
+# 适用场景：屏蔽 iOS / iPadOS / macOS 自动检测并提示系统更新
+# 策略推荐：REJECT 或 屏蔽苹果更新 (REJECT)
+
+DOMAIN,mesu.apple.com
+DOMAIN,gdmf.apple.com
+DOMAIN,updates-http.cdn-apple.com
+DOMAIN,ns.itunes.apple.com
+DOMAIN-SUFFIX,appldnld.apple.com

@@ -352,7 +352,6 @@ DOMAIN-SUFFIX,189qas.com
 DOMAIN-SUFFIX,chinatelecom.cn
 DOMAIN-SUFFIX,chinatelecom.com.cn
 DOMAIN-SUFFIX,chinatelecom.net.cn
-DOMAIN-SUFFIX,chntel.com
 DOMAIN-SUFFIX,ct10000.com
 # 小翼管家设备通信与物联控制核心
 DOMAIN-SUFFIX,xiaoyi.cn
@@ -367,7 +366,6 @@ DOMAIN-SUFFIX,smartlife189.com
 DOMAIN-SUFFIX,ctwing.cn
 DOMAIN-SUFFIX,ctwing.com.cn
 # 天翼统一认证体系 (手机号一键登录/Token免密鉴权，小翼管家登录死锁根源)
-DOMAIN-SUFFIX,id6.me
 DOMAIN-SUFFIX,zzx9.cn
 DOMAIN-SUFFIX,cmpassport.com
 # 天翼云 (小翼管家核心后端、微服务接口与视频流)
@@ -378,7 +376,6 @@ DOMAIN-SUFFIX,ctyuncdn.cn
 DOMAIN-SUFFIX,ctyuncdn.com
 DOMAIN-SUFFIX,ctyuncdn.net
 DOMAIN-SUFFIX,ctyunwaf.com
-DOMAIN-SUFFIX,ctyuninner.com
 # 电信 CDN & DNS 网络
 DOMAIN-SUFFIX,ctcdn.cn
 DOMAIN-SUFFIX,ctcdn.com
@@ -421,6 +418,12 @@ DOMAIN-KEYWORD,qingteng
 DOMAIN-KEYWORD,qingtengzhilian
 
 # --- 皖事通 (安徽政务服务) ---
+# 芜湖住房公积金 & 皖事通芜湖分厅
+DOMAIN-SUFFIX,wuhugjj.top
+DOMAIN-SUFFIX,wuhugjj.gov.cn
+DOMAIN-SUFFIX,wuhu.gov.cn
+DOMAIN-KEYWORD,wuhugjj
+
 DOMAIN-SUFFIX,ahzwfw.gov.cn
 DOMAIN-SUFFIX,ah.gov.cn
 DOMAIN-SUFFIX,anhui.gov.cn
@@ -602,8 +605,3 @@ DOMAIN-KEYWORD,hdsky
 DOMAIN-KEYWORD,sunnypt
 DOMAIN-KEYWORD,totheglory
 
-# 芜湖住房公积金 & 皖事通芜湖分厅
-DOMAIN-SUFFIX,wuhugjj.top
-DOMAIN-SUFFIX,wuhugjj.gov.cn
-DOMAIN-SUFFIX,wuhu.gov.cn
-DOMAIN-KEYWORD,wuhugjj
