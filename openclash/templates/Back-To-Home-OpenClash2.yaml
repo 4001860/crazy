@@ -1,0 +1,1844 @@
+---
+mode: rule
+log-level: info
+ipv6: false
+allow-lan: true
+mixed-port: 7893
+unified-delay: true
+tcp-concurrent: true
+geodata-mode: true
+dns:
+  enable: true
+  listen: 0.0.0.0:7874
+  ipv6: false
+  respect-rules: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.19.0.1/16
+  fake-ip-filter:
+  - "*.lan"
+  - "*.localdomain"
+  - "*.example"
+  - "*.invalid"
+  - "*.localhost"
+  - "*.test"
+  - "*.local"
+  - "*.home.arpa"
+  - time.*.com
+  - time.*.gov
+  - time.*.edu.cn
+  - time.*.apple.com
+  - time-ios.apple.com
+  - time1.*.com
+  - time2.*.com
+  - time3.*.com
+  - time4.*.com
+  - time5.*.com
+  - time6.*.com
+  - time7.*.com
+  - ntp.*.com
+  - ntp1.*.com
+  - ntp2.*.com
+  - ntp3.*.com
+  - ntp4.*.com
+  - ntp5.*.com
+  - ntp6.*.com
+  - ntp7.*.com
+  - "*.time.edu.cn"
+  - "*.ntp.org.cn"
+  - "+.pool.ntp.org"
+  - time1.cloud.tencent.com
+  - music.163.com
+  - "*.music.163.com"
+  - "*.126.net"
+  - musicapi.taihe.com
+  - music.taihe.com
+  - songsearch.kugou.com
+  - trackercdn.kugou.com
+  - "*.kuwo.cn"
+  - api-jooxtt.sanook.com
+  - api.joox.com
+  - joox.com
+  - y.qq.com
+  - "*.y.qq.com"
+  - streamoc.music.tc.qq.com
+  - mobileoc.music.tc.qq.com
+  - isure.stream.qqmusic.qq.com
+  - dl.stream.qqmusic.qq.com
+  - aqqmusic.tc.qq.com
+  - amobile.music.tc.qq.com
+  - "*.xiami.com"
+  - "*.music.migu.cn"
+  - music.migu.cn
+  - "+.msftconnecttest.com"
+  - "+.msftncsi.com"
+  - localhost.ptlogin2.qq.com
+  - localhost.sec.qq.com
+  - "+.qq.com"
+  - "+.tencent.com"
+  - "+.srv.nintendo.net"
+  - "*.n.n.srv.nintendo.net"
+  - "+.cdn.nintendo.net"
+  - "+.stun.playstation.net"
+  - xbox.*.*.microsoft.com
+  - "*.*.xboxlive.com"
+  - xbox.*.microsoft.com
+  - xnotify.xboxlive.com
+  - "+.battlenet.com.cn"
+  - "+.wotgame.cn"
+  - "+.wggames.cn"
+  - "+.wowsgame.cn"
+  - "+.wargaming.net"
+  - proxy.golang.org
+  - stun.*.*
+  - stun.*.*.*
+  - "+.stun.*.*"
+  - "+.stun.*.*.*"
+  - "+.stun.*.*.*.*"
+  - "+.stun.*.*.*.*.*"
+  - heartbeat.belkin.com
+  - "*.linksys.com"
+  - "*.linksyssmartwifi.com"
+  - "*.router.asus.com"
+  - mesu.apple.com
+  - swscan.apple.com
+  - swquery.apple.com
+  - swdownload.apple.com
+  - swcdn.apple.com
+  - swdist.apple.com
+  - lens.l.google.com
+  - stun.l.google.com
+  - na.b.g-tun.com
+  - "+.nflxvideo.net"
+  - "*.square-enix.com"
+  - "*.finalfantasyxiv.com"
+  - "*.ffxiv.com"
+  - "*.ff14.sdo.com"
+  - ff.dorado.sdo.com
+  - "*.mcdn.bilivideo.cn"
+  - "+.media.dssott.com"
+  - shark007.net
+  - Mijia Cloud
+  - "+.cmbchina.com"
+  - "+.cmbimg.com"
+  - local.adguard.org
+  - "+.sandai.net"
+  - "+.n0808.com"
+  - "+.uu.163.com"
+  - ps.res.netease.com
+  - "+.pub.3gppnetwork.org"
+  - geosite:category-games
+  - "*.rustdesk.com"
+  - rs-sg.rustdesk.com
+  - rs-cn.rustdesk.com
+  - rs-us.rustdesk.com
+  - hbbs.rustdesk.com
+  - hbbr.rustdesk.com
+  - "+.services.googleapis.cn"
+  - "+.googleapis.cn"
+  - "+.xn--ngstr-lra8j.com"
+  - "+.apple.com"
+  - "+.icloud.com"
+  - "+.icloud-content.com"
+  - "+.mzstatic.com"
+  - "+.itunes.apple.com"
+  - "+.appstoreconnect.apple.com"
+  - "+.digicert.com"
+  - "+.rustdesk.com"
+  - rs-ny.rustdesk.com
+  - ntp.*
+  - "*.pool.ntp.org"
+  - dns.msftncsi.com
+  - www.msftconnecttest.com
+  - msftconnecttest.com
+  - connect.rom.miui.com
+  - connectivitycheck.gstatic.com
+  - captive.apple.com
+  - network-test.debian.org
+  - "*.srv.nintendo.net"
+  - "*.stun.playstation.net"
+  - "*.xboxlive.com"
+  - router.asus.com
+  - geosite:cn
+  - "+.qingtenglove.com"
+  - ims.*
+  - "*.ims"
+  - "+.3gppnetwork.org"
+  - "+.epdg.ims.2degrees.net.nz"
+  - "+.wlan.three.com.hk"
+  - "+.ondemandconnectivity.com"
+  - rule-set:oc-cn-domain
+  default-nameserver:
+  - tcp://223.5.5.5
+  - tcp://119.29.29.29
+  nameserver:
+  - https://1.1.1.1/dns-query#disable-ipv6=true
+  - https://8.8.8.8/dns-query#disable-ipv6=true
+  proxy-server-nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+  nameserver-policy:
+    "+.smile2008.club":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.mynetname.net":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.rustdesk.com":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.qingtenglove.com":
+    - 223.5.5.5
+    - 119.29.29.29
+    rule-set:PrivateTracker:
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.mua.xloli.cc":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.sunnypt.top":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.hdhome.org":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.hdtime.org":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.carpt.net":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.hdfans.org":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.hhanclub.net":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.audiences.me":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.piggo.me":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.hddolby.com":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.ptvicomo.net":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.gamegamept.com":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.1ptba.com":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.pttime.org":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.btschool.club":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.oshen.win":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.crabpt.vip":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.hdvbits.com":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.yemapt.org":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.m-team.cc":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.m-team.io":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.rousi.pro":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.hdkyl.in":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.hdkylin.top":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.kufei.org":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.qingwa.pro":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.qingwapt.com":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.cyanbug.net":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.ubits.club":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.zhuque.in":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.hdatmos.club":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.t.tosky.club":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.zmpt.cc":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.pt.soulvoice.club":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.icc2022.com":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.monikadesign.uk":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.ptcafe.club":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.haidan.cc":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.ptsbao.club":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.ptlgs.org":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.raingfh.top":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.public.ecustpt.eu.org":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.nicept.net":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.leaves.red":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.htpt.cc":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.hdarea.club":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.discfan.net":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.nanyangpt.com":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.tjupt.org":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.njtupt.top":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.zeus.hamsters.space":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.hdpt.xyz":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.hdvideo.one":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.dajiao.cyou":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.share.ilolicon.com":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.pt.eastgame.org":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.pt.dragonhd.xyz":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.agsvpt.com":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.agsvpt.cn":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.agsvpt.work":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.tackers.work":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.springsunday.net":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.ptchdbits.co":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.ourbits.club":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.keepfrds.com":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.hdsky.me":
+    - 223.5.5.5
+    - 119.29.29.29
+    "+.totheglory.im":
+    - 223.5.5.5
+    - 119.29.29.29
+    geosite:cn,private:
+    - https://223.5.5.5/dns-query
+    - https://120.53.53.53/dns-query
+    "+.epdg.*": https://dns.google/dns-query
+    "+.ims.*": https://dns.google/dns-query
+    "+.3gppnetwork.org":
+    - https://dns.google/dns-query
+    - https://cloudflare-dns.com/dns-query
+    geosite:cn: 192.168.50.3
+    geosite:geolocation-!cn:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+    "+.epdg.ims.2degrees.net.nz":
+    - https://dns.google/dns-query
+    - https://cloudflare-dns.com/dns-query
+    "+.wlan.three.com.hk":
+    - https://dns.google/dns-query
+    - https://cloudflare-dns.com/dns-query
+    "+.ondemandconnectivity.com":
+    - https://dns.google/dns-query
+    - https://cloudflare-dns.com/dns-query
+  fake-ip-filter-mode: blacklist
+hosts:
+  epdg.epc.mnc002.mcc262.pub.3gppnetwork.org: 139.7.117.170
+sniffer:
+  enable: false
+  sniff:
+    HTTP:
+      ports:
+      - 80
+      - 8080-8880
+      override-destination: true
+    TLS:
+      ports:
+      - 443
+      - 8443
+    QUIC:
+      ports:
+      - 443
+      - 8443
+  force-domain:
+  - "+.v2ex.com"
+  skip-domain:
+  - geosite:private
+  - geosite:cn
+  - dlg.io.mi.com
+  - "+.push.apple.com"
+  - "+.apple.com"
+  - "+.wechat.com"
+  - "+.qpic.cn"
+  - "+.qq.com"
+  - "+.wechatapp.com"
+  - "+.vivox.com"
+  - "+.oray.com"
+  - "+.sunlogin.net"
+  - "+.msftconnecttest.com"
+  - "+.msftncsi.com"
+  - "+.pub.3gppnetwork.org"
+  - ims.*
+  - "*.ims"
+proxy-providers:
+  节点池:
+    type: http
+    url: https://substore.smile2008.club/download/collection/crazy?target=mihomo
+    interval: 86400
+    path: "./proxy_provider/nodes.yaml"
+    health-check:
+      enable: true
+      interval: 180
+      url: https://www.gstatic.com/generate_204
+rule-providers:
+  MyDirect:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/4001860/crazy/main/rules/custom/Direct.list
+    path: "./rule_provider/Direct.list"
+    interval: 86400
+  MyReject:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/4001860/crazy/main/rules/custom/Reject.list
+    path: "./rule_provider/Reject.list"
+    interval: 86400
+  PrivateTracker:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PrivateTracker/PrivateTracker.yaml
+    path: "./rule_provider/PrivateTracker.yaml"
+    interval: 86400
+  Advertising:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Advertising/Advertising.yaml
+    path: "./rule_provider/Advertising.yaml"
+    interval: 86400
+  Privacy:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Privacy/Privacy.yaml
+    path: "./rule_provider/Privacy.yaml"
+    interval: 86400
+  Lan:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.yaml
+    path: "./rule_provider/Lan.yaml"
+    interval: 86400
+  ChinaMax:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax.yaml
+    path: "./rule_provider/ChinaMax.yaml"
+    interval: 86400
+  GoogleFCM:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GoogleFCM/GoogleFCM.yaml
+    path: "./rule_provider/GoogleFCM.yaml"
+    interval: 86400
+  OneDrive:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OneDrive/OneDrive.yaml
+    path: "./rule_provider/OneDrive.yaml"
+    interval: 86400
+  Microsoft:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml
+    path: "./rule_provider/Microsoft.yaml"
+    interval: 86400
+  Apple:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple.yaml
+    path: "./rule_provider/Apple.yaml"
+    interval: 86400
+  Google:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml
+    path: "./rule_provider/Google.yaml"
+    interval: 86400
+  PayPal:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PayPal/PayPal.yaml
+    path: "./rule_provider/PayPal.yaml"
+    interval: 86400
+  Telegram:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml
+    path: "./rule_provider/Telegram.yaml"
+    interval: 86400
+  OpenAI:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml
+    path: "./rule_provider/OpenAI.yaml"
+    interval: 86400
+  Gemini:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Gemini/Gemini.yaml
+    path: "./rule_provider/Gemini.yaml"
+    interval: 86400
+  GoogleVoice:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GoogleVoice/GoogleVoice.yaml
+    path: "./rule_provider/GoogleVoice.yaml"
+    interval: 86400
+  Whatsapp:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Whatsapp/Whatsapp.yaml
+    path: "./rule_provider/Whatsapp.yaml"
+    interval: 86400
+  Line:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Line/Line.yaml
+    path: "./rule_provider/Line.yaml"
+    interval: 86400
+  NetEaseMusic:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/NetEaseMusic/NetEaseMusic.yaml
+    path: "./rule_provider/NetEaseMusic.yaml"
+    interval: 86400
+  YouTube:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml
+    path: "./rule_provider/YouTube.yaml"
+    interval: 86400
+  Netflix:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.yaml
+    path: "./rule_provider/Netflix.yaml"
+    interval: 86400
+  Spotify:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.yaml
+    path: "./rule_provider/Spotify.yaml"
+    interval: 86400
+  Bahamut:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bahamut/Bahamut.yaml
+    path: "./rule_provider/Bahamut.yaml"
+    interval: 86400
+  BiliBili:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BiliBili/BiliBili.yaml
+    path: "./rule_provider/BiliBili.yaml"
+    interval: 86400
+  JOOX:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/JOOX/JOOX.yaml
+    path: "./rule_provider/JOOX.yaml"
+    interval: 86400
+  ChinaMedia:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMedia/ChinaMedia.yaml
+    path: "./rule_provider/ChinaMedia.yaml"
+    interval: 86400
+  GlobalMedia:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia.yaml
+    path: "./rule_provider/GlobalMedia.yaml"
+    interval: 86400
+  Epic:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Epic/Epic.yaml
+    path: "./rule_provider/Epic.yaml"
+    interval: 86400
+  Origin:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Origin/Origin.yaml
+    path: "./rule_provider/Origin.yaml"
+    interval: 86400
+  Sony:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Sony/Sony.yaml
+    path: "./rule_provider/Sony.yaml"
+    interval: 86400
+  Steam:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Steam/Steam.yaml
+    path: "./rule_provider/Steam.yaml"
+    interval: 86400
+  Nintendo:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Nintendo/Nintendo.yaml
+    path: "./rule_provider/Nintendo.yaml"
+    interval: 86400
+  Proxy:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy.yaml
+    path: "./rule_provider/Proxy.yaml"
+    interval: 86400
+  Download:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download.yaml
+    path: "./rule_provider/Download.yaml"
+    interval: 86400
+  Binance:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Binance/Binance.yaml
+    path: "./rule_provider/Binance.yaml"
+    interval: 86400
+  OKX:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OKX/OKX.yaml
+    path: "./rule_provider/OKX.yaml"
+    interval: 86400
+  Crypto:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Crypto/Crypto.yaml
+    path: "./rule_provider/Crypto.yaml"
+    interval: 86400
+  TikTok:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok.yaml
+    path: "./rule_provider/TikTok.yaml"
+    interval: 86400
+  oc-cn-domain:
+    type: http
+    interval: 43200
+    behavior: domain
+    format: mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs
+    path: "./rule_provider/oc-cn-domain.mrs"
+proxies:
+- name: HY2-Home-5G
+  type: hysteria2
+  server: www.smile2008.club
+  port: 18686
+  password: 0bc0da13-4b26-41d1-b51e-fb5141644f2d
+  ports: 18686-18695
+  sni: www.smile2008.club
+  skip-cert-verify: false
+- name: HY2-Home-Lan
+  type: hysteria2
+  server: 192.168.50.11
+  port: 18686
+  password: 0bc0da13-4b26-41d1-b51e-fb5141644f2d
+  sni: www.smile2008.club
+  skip-cert-verify: false
+- name: TS-Home-5G
+  type: tailscale
+  auth-key: tskey-auth-kobFUC1yiF11CNTRL-1ykfEz2VfdMpFXqL9UumcMQpjrfYbD1q5
+  udp: true
+  accept-routes: true
+  state-dir: "./tailscale"
+- name: WG-To-Home-5G
+  type: wireguard
+  server: hj30a6fay5j.sn.mynetname.net
+  port: 19898
+  ip: 10.10.10.6
+  private-key: kONfVC/VC8PWtqr33H/thNWdqZrlaHK8HU4G+v8XbFk=
+  public-key: Evrm5VsZw9VHe6kP0yYk5vzIXM3pADcwZygmRMRvXDM=
+  udp: true
+  mtu: 1280
+  allowed-ips:
+  - 0.0.0.0/0
+  persistent-keepalive: 10
+  remote-dns-resolve: false
+  dns:
+  - 192.168.50.7
+- name: WG-To-Home-Lan
+  type: wireguard
+  server: 192.168.50.6
+  port: 19898
+  ip: 10.10.10.8
+  private-key: aHVdyOOYF2UG7oD11H24kv610lPkqzeDPykirnA8P3A=
+  public-key: Evrm5VsZw9VHe6kP0yYk5vzIXM3pADcwZygmRMRvXDM=
+  udp: true
+  mtu: 1280
+  allowed-ips:
+  - 10.10.10.0/24
+  - 192.168.50.0/24
+  - 192.168.1.0/24
+  - 192.168.10.0/24
+  persistent-keepalive: 10
+  remote-dns-resolve: false
+  dns:
+  - 192.168.50.7
+proxy-groups:
+- name: 回家自动
+  type: fallback
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Back.png
+  proxies:
+  - WG-To-Home-Lan
+  - HY2-Home-Lan
+  - WG-To-Home-5G
+  - HY2-Home-5G
+  - TS-Home-5G
+  url: https://www.gstatic.com/generate_204
+  interval: 180
+- name: 自动选择
+  type: smart
+  use:
+  - 节点池
+  url: https://www.gstatic.com/generate_204
+  interval: 180
+  tolerance: 100
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Round_Robin.png
+- name: 节点选择
+  type: select
+  proxies:
+  - "\U0001F1FA\U0001F1F8 美国链式故转"
+  - HY2-Home-5G
+  - HY2-Home-Lan
+  - WG-To-Home-5G
+  - WG-To-Home-Lan
+  - TS-Home-5G
+  - 自动选择
+  - 手动切换
+  - DIRECT
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Static.png
+- name: 手动切换
+  type: select
+  use:
+  - 节点池
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Proxy.png
+- name: ChatGpt
+  type: select
+  proxies:
+  - "\U0001F1FA\U0001F1F8 美国链式故转"
+  - 节点选择
+  - 自动选择
+  - 手动切换
+  - DIRECT
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/ChatGPT5.png
+- name: Gemini
+  type: select
+  proxies:
+  - "\U0001F1FA\U0001F1F8 美国链式故转"
+  - 节点选择
+  - 自动选择
+  - 手动切换
+  - DIRECT
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Gemini.png
+- name: Wise
+  type: select
+  proxies:
+  - DIRECT
+  - "\U0001F1FC\U0001F1F8 台湾节点"
+  - 节点选择
+  - 自动选择
+  - 手动切换
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Wise.png
+- name: bet365
+  type: select
+  proxies:
+  - "\U0001F1F8\U0001F1EC 新加坡节点"
+  - "\U0001F1FC\U0001F1F8 台湾节点"
+  - "\U0001F1EF\U0001F1F5 日本节点"
+  - "\U0001F1EC\U0001F1E7 英国节点"
+  - 节点选择
+  - 手动切换
+  - DIRECT
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/bet365.png
+- name: SafePal
+  type: select
+  proxies:
+  - DIRECT
+  - "\U0001F1FC\U0001F1F8 台湾节点"
+  - 节点选择
+  - 自动选择
+  - 手动切换
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/SafePal.png
+- name: N26
+  type: select
+  proxies:
+  - DIRECT
+  - "\U0001F1EC\U0001F1E7 英国节点"
+  - "\U0001F1E9\U0001F1EA 德国节点"
+  - 节点选择
+  - 自动选择
+  - 手动切换
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/N26.png
+- name: Bybit
+  type: select
+  proxies:
+  - "\U0001F1F0\U0001F1F7 韩国节点"
+  - "\U0001F1EF\U0001F1F5 日本节点"
+  - "\U0001F1F8\U0001F1EC 新加坡节点"
+  - 节点选择
+  - 自动选择
+  - 手动切换
+  - DIRECT
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Bybit.png
+- name: 币安
+  type: select
+  proxies:
+  - DIRECT
+  - "\U0001F1EF\U0001F1F5 日本节点"
+  - 节点选择
+  - 自动选择
+  - 手动切换
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Binance.png
+- name: 欧易
+  type: select
+  proxies:
+  - DIRECT
+  - "\U0001F1FC\U0001F1F8 台湾节点"
+  - 节点选择
+  - 自动选择
+  - 手动切换
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/OKX.png
+- name: TikTok
+  type: select
+  proxies:
+  - "\U0001F1F8\U0001F1EC 新加坡节点"
+  - "\U0001F1FA\U0001F1F8 美国节点"
+  - "\U0001F1FA\U0001F1F8 美国链式故转"
+  - 节点选择
+  - 自动选择
+  - 手动切换
+  - DIRECT
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/TikTok.png
+- name: PayPal
+  type: select
+  proxies:
+  - DIRECT
+  - "\U0001F1ED\U0001F1F0 香港节点"
+  - "\U0001F1F8\U0001F1EC 新加坡节点"
+  - 节点选择
+  - 自动选择
+  - 手动切换
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/PayPal.png
+- name: YouTube
+  type: select
+  proxies:
+  - "\U0001F1FA\U0001F1F8 US03"
+  - "\U0001F1FA\U0001F1F8 美国链式故转"
+  - 节点选择
+  - 自动选择
+  - 手动切换
+  - DIRECT
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/YouTube.png
+- name: Netflix
+  type: select
+  proxies:
+  - "\U0001F1ED\U0001F1F0 香港节点"
+  - "\U0001F1F8\U0001F1EC 新加坡节点"
+  - "\U0001F1FA\U0001F1F8 US03"
+  - "\U0001F1FA\U0001F1F8 美国链式故转"
+  - 节点选择
+  - 自动选择
+  - 手动切换
+  - DIRECT
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Netflix.png
+- name: Disney+
+  type: select
+  proxies:
+  - "\U0001F1ED\U0001F1F0 香港节点"
+  - "\U0001F1FA\U0001F1F8 US03"
+  - "\U0001F1FA\U0001F1F8 美国链式故转"
+  - 节点选择
+  - 自动选择
+  - 手动切换
+  - DIRECT
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Disney+.png
+- name: 巴哈姆特
+  type: select
+  proxies:
+  - "\U0001F1FC\U0001F1F8 台湾节点"
+  - 节点选择
+  - 自动选择
+  - 手动切换
+  - DIRECT
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Bahamut.png
+- name: Spotify
+  type: select
+  proxies:
+  - "\U0001F1FA\U0001F1F8 US03"
+  - "\U0001F1FA\U0001F1F8 美国链式故转"
+  - "\U0001F1ED\U0001F1F0 香港节点"
+  - 节点选择
+  - 自动选择
+  - 手动切换
+  - DIRECT
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Spotify.png
+- name: 网易音乐
+  type: select
+  proxies:
+  - "\U0001F1ED\U0001F1F0 香港节点"
+  - DIRECT
+  - 节点选择
+  - 自动选择
+  - 手动切换
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Netease_Music.png
+- name: 哔哩哔哩
+  type: select
+  proxies:
+  - 全球直连
+  - "\U0001F1FC\U0001F1F8 台湾节点"
+  - "\U0001F1ED\U0001F1F0 香港节点"
+  - 节点选择
+  - 自动选择
+  - 手动切换
+  - DIRECT
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/bilibili.png
+- name: stream-link
+  type: select
+  proxies:
+  - "\U0001F1FA\U0001F1F8 US03"
+  - "\U0001F1FA\U0001F1F8 美国链式故转"
+  - 节点选择
+  - 自动选择
+  - 手动切换
+  - DIRECT
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Disney+.png
+- name: LINE
+  type: select
+  proxies:
+  - "\U0001F1ED\U0001F1F0 香港节点"
+  - "\U0001F1FA\U0001F1F8 US03"
+  - "\U0001F1FA\U0001F1F8 美国链式故转"
+  - 节点选择
+  - 自动选择
+  - 手动切换
+  - DIRECT
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Line.png
+- name: WhatsApp
+  type: select
+  proxies:
+  - "\U0001F1ED\U0001F1F0 香港节点"
+  - "\U0001F1FA\U0001F1F8 US03"
+  - "\U0001F1FA\U0001F1F8 美国链式故转"
+  - 节点选择
+  - 自动选择
+  - 手动切换
+  - DIRECT
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/WhatsApp.png
+- name: Voice
+  type: select
+  proxies:
+  - "\U0001F1FA\U0001F1F8 US03"
+  - "\U0001F1FA\U0001F1F8 美国链式故转"
+  - 节点选择
+  - 自动选择
+  - 手动切换
+  - DIRECT
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Googlevoice.png
+- name: JOOX
+  type: select
+  proxies:
+  - "\U0001F1ED\U0001F1F0 香港节点"
+  - 节点选择
+  - 自动选择
+  - 手动切换
+  - DIRECT
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/JOOX.png
+- name: 谷歌服务
+  type: select
+  proxies:
+  - "\U0001F1FA\U0001F1F8 US03"
+  - "\U0001F1FA\U0001F1F8 美国链式故转"
+  - 节点选择
+  - 自动选择
+  - 手动切换
+  - DIRECT
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Google.png
+- name: 谷歌FCM
+  type: select
+  proxies:
+  - DIRECT
+  - "\U0001F1FA\U0001F1F8 US03"
+  - "\U0001F1FA\U0001F1F8 美国链式故转"
+  - 节点选择
+  - 自动选择
+  - 手动切换
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Google.png
+- name: 电报消息
+  type: select
+  proxies:
+  - "\U0001F1FA\U0001F1F8 US03"
+  - "\U0001F1FA\U0001F1F8 美国链式故转"
+  - 节点选择
+  - 自动选择
+  - 手动切换
+  - DIRECT
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Telegram.png
+- name: 游戏平台
+  type: select
+  proxies:
+  - DIRECT
+  - 节点选择
+  - 自动选择
+  - 手动切换
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Game.png
+- name: 苹果服务
+  type: select
+  proxies:
+  - DIRECT
+  - 节点选择
+  - 自动选择
+  - 手动切换
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Apple_Arcade.png
+- name: 屏蔽苹果更新
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+  - 节点选择
+  - 自动选择
+  - 手动切换
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Apple_Arcade.png
+- name: 微软云盘
+  type: select
+  proxies:
+  - DIRECT
+  - "\U0001F1FA\U0001F1F8 US03"
+  - "\U0001F1FA\U0001F1F8 美国链式故转"
+  - 节点选择
+  - 自动选择
+  - 手动切换
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/OneDrive.png
+- name: 微软服务
+  type: select
+  proxies:
+  - "\U0001F1FA\U0001F1F8 US03"
+  - "\U0001F1FA\U0001F1F8 美国链式故转"
+  - DIRECT
+  - 节点选择
+  - 自动选择
+  - 手动切换
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Windows_11.png
+- name: RustDesk
+  type: select
+  proxies:
+  - DIRECT
+  - 节点选择
+  - 自动选择
+  - 手动切换
+  - 回家自动
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/RustDesk.png
+- name: 广告拦截
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/AdBlack.png
+- name: 应用净化
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Reject.png
+- name: 国内媒体
+  type: select
+  proxies:
+  - DIRECT
+  - 节点选择
+  - 自动选择
+  - 手动切换
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/China.png
+- name: 国外媒体
+  type: select
+  proxies:
+  - "\U0001F1FA\U0001F1F8 US03"
+  - "\U0001F1FA\U0001F1F8 美国链式故转"
+  - 节点选择
+  - 自动选择
+  - 手动切换
+  - DIRECT
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Global.png
+- name: 全球直连
+  type: select
+  proxies:
+  - DIRECT
+  - 节点选择
+  - 自动选择
+  - 手动切换
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Direct.png
+- name: 漏网之鱼
+  type: select
+  proxies:
+  - 节点选择
+  - "\U0001F1FA\U0001F1F8 US03"
+  - "\U0001F1FA\U0001F1F8 美国链式故转"
+  - 自动选择
+  - 手动切换
+  - DIRECT
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Final.png
+- name: "\U0001F1FA\U0001F1F8 美国链式故转"
+  type: fallback
+  proxies:
+  - "\U0001F1FA\U0001F1F8 US02"
+  - "\U0001F1FA\U0001F1F8 US01"
+  - "\U0001F1FA\U0001F1F8 US03"
+  - "\U0001F1FA\U0001F1F8 美国节点"
+  url: https://www.gstatic.com/generate_204
+  interval: 180
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/United_States.png
+- name: "\U0001F1FA\U0001F1F8 美国排障"
+  type: select
+  proxies:
+  - "\U0001F1FA\U0001F1F8 US01"
+  - "\U0001F1FA\U0001F1F8 US02"
+  - "\U0001F1FA\U0001F1F8 US03"
+  - "\U0001F1FA\U0001F1F8 美国节点"
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/United_States.png
+- name: "\U0001F1FA\U0001F1F8 US01"
+  type: smart
+  use:
+  - 节点池
+  filter: "(?i)gcp1"
+  url: https://www.gstatic.com/generate_204
+  interval: 180
+  tolerance: 200
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/United_States.png
+- name: "\U0001F1FA\U0001F1F8 US02"
+  type: smart
+  use:
+  - 节点池
+  filter: "(?i)gcp2"
+  url: https://www.gstatic.com/generate_204
+  interval: 180
+  tolerance: 200
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/United_States.png
+- name: "\U0001F1FA\U0001F1F8 US03"
+  type: smart
+  use:
+  - 节点池
+  filter: "(?i)rack"
+  url: https://www.gstatic.com/generate_204
+  interval: 180
+  tolerance: 100
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/United_States.png
+- name: "\U0001F1ED\U0001F1F0 香港节点"
+  type: smart
+  use:
+  - 节点池
+  filter: "(?i)(\U0001F1ED\U0001F1F0|港|Hong|HK)"
+  tolerance: 100
+  interval: 180
+  hidden: true
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Hong_Kong.png
+  url: https://www.gstatic.com/generate_204
+- name: "\U0001F1FC\U0001F1F8 台湾节点"
+  type: smart
+  use:
+  - 节点池
+  filter: "(?i)(\U0001F1F9\U0001F1FC|台|Tai|TW)"
+  tolerance: 100
+  interval: 180
+  hidden: true
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Taiwan.png
+  url: https://www.gstatic.com/generate_204
+- name: "\U0001F1EF\U0001F1F5 日本节点"
+  type: smart
+  use:
+  - 节点池
+  filter: "(?i)(\U0001F1EF\U0001F1F5|日|Japan|JP)"
+  tolerance: 100
+  interval: 180
+  hidden: true
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Japan.png
+  url: https://www.gstatic.com/generate_204
+- name: "\U0001F1F0\U0001F1F7 韩国节点"
+  type: smart
+  use:
+  - 节点池
+  filter: "(?i)(\U0001F1F0\U0001F1F7|韩|Korea|KR)"
+  tolerance: 100
+  interval: 180
+  hidden: true
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Korea.png
+  url: https://www.gstatic.com/generate_204
+- name: "\U0001F1F8\U0001F1EC 新加坡节点"
+  type: smart
+  use:
+  - 节点池
+  filter: "(?i)(\U0001F1F8\U0001F1EC|新|Singapore|SG)"
+  tolerance: 100
+  interval: 180
+  hidden: true
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Singapore.png
+  url: https://www.gstatic.com/generate_204
+- name: "\U0001F1FA\U0001F1F8 美国节点"
+  type: smart
+  use:
+  - 节点池
+  filter: "(?i)(\U0001F1FA\U0001F1F8|美|States|United States|USA|US)"
+  tolerance: 100
+  interval: 180
+  hidden: true
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/United_States.png
+  url: https://www.gstatic.com/generate_204
+- name: "\U0001F1EC\U0001F1E7 英国节点"
+  type: smart
+  use:
+  - 节点池
+  filter: "(?i)(\U0001F1EC\U0001F1E7|英|Kingdom|UK)"
+  tolerance: 100
+  interval: 180
+  hidden: true
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/United_Kingdom.png
+  url: https://www.gstatic.com/generate_204
+- name: "\U0001F1E9\U0001F1EA 德国节点"
+  type: smart
+  use:
+  - 节点池
+  filter: "(?i)(德国|Germany|DE)"
+  tolerance: 100
+  interval: 180
+  hidden: true
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Germany.png
+  url: https://www.gstatic.com/generate_204
+- name: "\U0001F1F3\U0001F1F1 荷兰节点"
+  type: smart
+  use:
+  - 节点池
+  filter: "(?i)(\U0001F1F3\U0001F1F1|荷兰|Netherlands)"
+  url: https://www.gstatic.com/generate_204
+  interval: 180
+  tolerance: 100
+  hidden: true
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Netherlands.png
+- name: "\U0001F1F9\U0001F1ED 泰国节点"
+  type: smart
+  use:
+  - 节点池
+  filter: "(?i)(\U0001F1F9\U0001F1ED|泰国|Thailand)"
+  url: https://www.gstatic.com/generate_204
+  interval: 180
+  tolerance: 100
+  hidden: true
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Thailand.png
+- name: "\U0001F1F3\U0001F1FF 新西兰节点"
+  type: smart
+  use:
+  - 节点池
+  filter: "(?i)(\U0001F1F3\U0001F1FF|新西兰|New Zealand|New_Zealand)"
+  url: https://www.gstatic.com/generate_204
+  interval: 180
+  tolerance: 100
+  hidden: true
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/New_Zealand.png
+- name: "\U0001F1E6\U0001F1FA 澳大利亚节点"
+  type: smart
+  use:
+  - 节点池
+  filter: "(?i)(\U0001F1E6\U0001F1FA|澳大利亚|Australia)"
+  url: https://www.gstatic.com/generate_204
+  interval: 180
+  tolerance: 100
+  hidden: true
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Australia.png
+- name: "\U0001F1F2\U0001F1FE 马来节点"
+  type: smart
+  use:
+  - 节点池
+  filter: "(?i)(\U0001F1F2\U0001F1FE|马来|Malaysia|MY)"
+  tolerance: 100
+  interval: 180
+  hidden: true
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Malaysia.png
+  url: https://www.gstatic.com/generate_204
+- name: "\U0001F1FA\U0001F1F3 小众节点"
+  type: smart
+  use:
+  - 节点池
+  filter: "(?i)(德国|土耳其|阿根廷|印度)"
+  tolerance: 100
+  interval: 180
+  hidden: true
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Global.png
+  url: https://www.gstatic.com/generate_204
+- name: "\U0001F5FA️ Non-HK"
+  type: select
+  proxies:
+  - "\U0001F1FC\U0001F1F8 台湾节点"
+  - "\U0001F1EF\U0001F1F5 日本节点"
+  - "\U0001F1F0\U0001F1F7 韩国节点"
+  - "\U0001F1F8\U0001F1EC 新加坡节点"
+  - "\U0001F1FA\U0001F1F8 美国节点"
+  - "\U0001F1EC\U0001F1E7 英国节点"
+  - "\U0001F1F2\U0001F1FE 马来节点"
+  - "\U0001F1FA\U0001F1F3 小众节点"
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/World_Map.png
+  hidden: true
+- name: "\U0001F30F Asia"
+  type: select
+  proxies:
+  - "\U0001F1ED\U0001F1F0 香港节点"
+  - "\U0001F1FC\U0001F1F8 台湾节点"
+  - "\U0001F1EF\U0001F1F5 日本节点"
+  - "\U0001F1F0\U0001F1F7 韩国节点"
+  - "\U0001F1F8\U0001F1EC 新加坡节点"
+  - "\U0001F1F2\U0001F1FE 马来节点"
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/World_Map.png
+  hidden: true
+- name: "\U0001F30E Western"
+  type: select
+  proxies:
+  - "\U0001F1FA\U0001F1F8 美国节点"
+  - "\U0001F1EC\U0001F1E7 英国节点"
+  - "\U0001F1FA\U0001F1F3 小众节点"
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/World_Map.png
+  hidden: true
+- name: IPLC亚太前置-自动
+  type: fallback
+  use:
+  - 节点池
+  filter: "(?i)(iplc).*(\U0001F1ED\U0001F1F0|\U0001F1F9\U0001F1FC|\U0001F1EF\U0001F1F5|\U0001F1F8\U0001F1EC|香港|港|Hong|HK|台湾|台|TW|日本|日|JP|新加坡|狮城|SG)"
+  url: https://www.gstatic.com/generate_204
+  interval: 180
+  hidden: true
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Round_Robin.png
+- name: 小牛亚太前置-自动
+  type: fallback
+  use:
+  - 节点池
+  filter: "(?i)(小牛|6.66|大猪头).*(\U0001F1ED\U0001F1F0|\U0001F1F9\U0001F1FC|\U0001F1EF\U0001F1F5|\U0001F1F8\U0001F1EC|香港|港|Hong|HK|台湾|台|TW|日本|日|JP|新加坡|狮城|SG)"
+  url: https://www.gstatic.com/generate_204
+  interval: 180
+  hidden: true
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Round_Robin.png
+- name: VoWiFi-检测
+  type: select
+  proxies:
+  - DIRECT
+  - 节点选择
+  - 自动选择
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/World_Map.png
+  hidden: true
+- name: VoWiFi-美国
+  type: select
+  proxies:
+  - "\U0001F1FA\U0001F1F8 美国节点"
+  - "\U0001F1FA\U0001F1F8 美国链式故转"
+  - 节点选择
+  - DIRECT
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/United_States.png
+  hidden: true
+- name: VoWiFi-英国
+  type: select
+  proxies:
+  - "\U0001F1EC\U0001F1E7 英国节点"
+  - 节点选择
+  - DIRECT
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/United_Kingdom.png
+  hidden: true
+- name: VoWiFi-香港
+  type: select
+  proxies:
+  - "\U0001F1ED\U0001F1F0 香港节点"
+  - 节点选择
+  - DIRECT
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Hong_Kong.png
+  hidden: true
+- name: VoWiFi-德国
+  type: select
+  proxies:
+  - "\U0001F1E9\U0001F1EA 德国节点"
+  - "\U0001F1FA\U0001F1F3 小众节点"
+  - 节点选择
+  - DIRECT
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Germany.png
+  hidden: true
+- name: VoWiFi-乌克兰
+  type: select
+  proxies:
+  - 自动选择
+  - 节点选择
+  - DIRECT
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Ukraine.png
+  hidden: true
+- name: VoWiFi-荷兰
+  type: select
+  proxies:
+  - "\U0001F1F3\U0001F1F1 荷兰节点"
+  - 节点选择
+  - 自动选择
+  - DIRECT
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Netherlands.png
+  hidden: true
+- name: VoWiFi-泰国
+  type: select
+  proxies:
+  - "\U0001F1F9\U0001F1ED 泰国节点"
+  - 节点选择
+  - 自动选择
+  - DIRECT
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Thailand.png
+  hidden: true
+- name: VoWiFi-新西兰
+  type: select
+  proxies:
+  - "\U0001F1F3\U0001F1FF 新西兰节点"
+  - 节点选择
+  - 自动选择
+  - DIRECT
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/New_Zealand.png
+  hidden: true
+- name: VoWiFi-澳大利亚
+  type: select
+  proxies:
+  - "\U0001F1E6\U0001F1FA 澳大利亚节点"
+  - 节点选择
+  - 自动选择
+  - DIRECT
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Australia.png
+  hidden: true
+- name: VoWiFi-冰岛
+  type: select
+  proxies:
+  - 自动选择
+  - 节点选择
+  - DIRECT
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Iceland.png
+  hidden: true
+- name: GLOBAL
+  type: select
+  proxies:
+  - 回家自动
+  - 自动选择
+  - 节点选择
+  - 手动切换
+  - DIRECT
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Global.png
+rules:
+- AND,((SRC-IP-CIDR,192.168.50.20/32),(DOMAIN,mesu.apple.com)),REJECT
+- AND,((SRC-IP-CIDR,192.168.50.20/32),(DOMAIN,gdmf.apple.com)),REJECT
+- GEOSITE,category-public-tracker,DIRECT
+- DOMAIN-SUFFIX,youtube.com,YouTube
+- DOMAIN-SUFFIX,youtu.be,YouTube
+- DOMAIN-SUFFIX,googlevideo.com,YouTube
+- DOMAIN-SUFFIX,ytimg.com,YouTube
+- DOMAIN-SUFFIX,youtubei.googleapis.com,YouTube
+- DOMAIN-SUFFIX,youtube.googleapis.com,YouTube
+- DOMAIN-SUFFIX,ggpht.com,YouTube
+- DOMAIN-SUFFIX,withyoutube.com,YouTube
+- DOMAIN-KEYWORD,bet365,bet365
+- DOMAIN-SUFFIX,bet365.com,bet365
+- DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com,VoWiFi-检测
+- DOMAIN-SUFFIX,crl.t-mobile.com,VoWiFi-美国
+- DOMAIN-SUFFIX,depdg.epc.mnc260.mcc310.pub.3gppnetwork.org,VoWiFi-美国
+- DOMAIN-SUFFIX,eas3.msg.t-mobile.com,VoWiFi-美国
+- DOMAIN-SUFFIX,epdg.epc.mnc240.mcc310.pub.3gppnetwork.org,VoWiFi-美国
+- DOMAIN-SUFFIX,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org,VoWiFi-美国
+- DOMAIN-SUFFIX,mascns.t-mobile.com,VoWiFi-美国
+- DOMAIN-SUFFIX,ns.sipgeo.t-mobile.com,VoWiFi-美国
+- DOMAIN-SUFFIX,redirect.ultra.me,VoWiFi-美国
+- DOMAIN-SUFFIX,epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org,VoWiFi-美国
+- DOMAIN-SUFFIX,ultramobile.com,VoWiFi-美国
+- IP-CIDR,206.29.177.36/32,VoWiFi-美国,no-resolve
+- IP-CIDR,208.54.0.0/16,VoWiFi-美国,no-resolve
+- IP-CIDR,66.94.0.0/19,VoWiFi-美国,no-resolve
+- DOMAIN-SUFFIX,entsrv-uk.vodafone.com,VoWiFi-英国
+- DOMAIN-SUFFIX,epdg.epc.mnc015.mcc234.pub.3gppnetwork.org,VoWiFi-英国
+- DOMAIN-SUFFIX,epdg.epc.geo.mnc015.mcc234.pub.3gppnetwork.org,VoWiFi-英国
+- DOMAIN-SUFFIX,vuk-gto.prod.ondemandconnectivity.com,VoWiFi-英国
+- IP-CIDR,88.82.0.0/19,VoWiFi-英国,no-resolve
+- IP-CIDR,46.68.0.0/17,VoWiFi-英国,no-resolve
+- DOMAIN-SUFFIX,epdg.epc.mnc033.mcc234.pub.3gppnetwork.org,VoWiFi-英国
+- IP-CIDR,31.94.0.0/16,VoWiFi-英国,no-resolve
+- DOMAIN-SUFFIX,giffgaff.com,VoWiFi-英国
+- DOMAIN-SUFFIX,epdg.epc.mnc010.mcc234.pub.3gppnetwork.org,VoWiFi-英国
+- IP-CIDR,87.194.0.0/16,VoWiFi-英国,no-resolve
+- DOMAIN-SUFFIX,epdg.epc.mnc020.mcc234.pub.3gppnetwork.org,VoWiFi-英国
+- IP-CIDR,185.153.236.0/22,VoWiFi-英国,no-resolve
+- IP-CIDR,148.252.160.0/19,VoWiFi-英国,no-resolve
+- DOMAIN-SUFFIX,epdg.epc.mnc006.mcc255.pub.3gppnetwork.org,VoWiFi-乌克兰
+- IP-CIDR,212.58.160.0/19,VoWiFi-乌克兰,no-resolve
+- DOMAIN-SUFFIX,wlan.three.com.hk,VoWiFi-香港
+- DOMAIN-SUFFIX,epdg.epc.mnc000.mcc454.pub.3gppnetwork.org,VoWiFi-香港
+- DOMAIN-SUFFIX,ss.epdg.epc.mnc000.mcc454.pub.3gppnetwork.org,VoWiFi-香港
+- DOMAIN-SUFFIX,ss.epdg.epc.geo.mnc000.mcc454.pub.3gppnetwork.org,VoWiFi-香港
+- IP-CIDR,203.145.92.0/24,VoWiFi-香港,no-resolve
+- IP-CIDR,203.145.88.0/21,VoWiFi-香港,no-resolve
+- IP-CIDR,203.145.80.0/20,VoWiFi-香港,no-resolve
+- IP-CIDR,124.217.186.0/24,VoWiFi-香港,no-resolve
+- IP-CIDR,124.217.128.0/18,VoWiFi-香港,no-resolve
+- DOMAIN-SUFFIX,epdg.epc.mnc004.mcc204.pub.3gppnetwork.org,VoWiFi-荷兰
+- IP-CIDR,109.32.0.0/13,VoWiFi-荷兰,no-resolve
+- DOMAIN-SUFFIX,epdg.epc.mnc003.mcc520.pub.3gppnetwork.org,VoWiFi-泰国
+- IP-CIDR,119.31.123.0/24,VoWiFi-泰国,no-resolve
+- IP-CIDR,119.31.0.0/17,VoWiFi-泰国,no-resolve
+- DOMAIN-SUFFIX,epdg.ims.2degrees.net.nz,VoWiFi-新西兰
+- IP-CIDR,118.148.0.0/15,VoWiFi-新西兰,no-resolve
+- DOMAIN-SUFFIX,epdg.epc.mnc001.mcc530.pub.3gppnetwork.org,VoWiFi-新西兰
+- IP-CIDR,203.96.192.0/19,VoWiFi-新西兰,no-resolve
+- DOMAIN-SUFFIX,epdg.epc.mnc001.mcc505.pub.3gppnetwork.org,VoWiFi-澳大利亚
+- IP-CIDR,149.135.0.0/16,VoWiFi-澳大利亚,no-resolve
+- DOMAIN-SUFFIX,epdg.epc.mnc002.mcc505.pub.3gppnetwork.org,VoWiFi-澳大利亚
+- DOMAIN-SUFFIX,epdg.epc.mnc003.mcc505.pub.3gppnetwork.org,VoWiFi-澳大利亚
+- DOMAIN-SUFFIX,epdg.epc.mnc002.mcc262.pub.3gppnetwork.org,VoWiFi-德国
+- IP-CIDR,139.7.117.168/30,VoWiFi-德国,no-resolve
+- DOMAIN-SUFFIX,epdg.epc.mnc003.mcc262.pub.3gppnetwork.org,VoWiFi-德国
+- IP-CIDR,213.20.0.0/16,VoWiFi-德国,no-resolve
+- IP-CIDR,62.52.0.0/16,VoWiFi-德国,no-resolve
+- DOMAIN-SUFFIX,epdg.epc.mnc011.mcc274.pub.3gppnetwork.org,VoWiFi-冰岛
+- IP-CIDR,78.40.249.216/31,VoWiFi-冰岛,no-resolve
+- DOMAIN,www.smile2008.club,DIRECT
+- DOMAIN,pve.smile2008.club,DIRECT
+- DOMAIN,substore.smile2008.club,自动选择
+- DOMAIN-SUFFIX,mynetname.net,DIRECT
+- IP-CIDR,10.10.10.0/24,DIRECT,no-resolve
+- IP-CIDR,192.168.50.0/24,DIRECT,no-resolve
+- IP-CIDR,192.168.1.0/24,DIRECT,no-resolve
+- IP-CIDR,192.168.10.0/24,DIRECT,no-resolve
+- IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+- IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+- IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+- IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+- AND,((NETWORK,UDP),(DST-PORT,443),(DOMAIN-KEYWORD,google)),REJECT
+- AND,((NETWORK,UDP),(DST-PORT,443),(DOMAIN-KEYWORD,youtube)),REJECT
+- AND,((NETWORK,UDP),(DST-PORT,443),(DOMAIN-SUFFIX,googleapis.cn)),REJECT
+- AND,((NETWORK,UDP),(DST-PORT,443),(DOMAIN-SUFFIX,gvt1.com)),REJECT
+- IP-CIDR,0.0.0.0/8,REJECT,no-resolve
+- AND,((SRC-IP-CIDR,192.168.50.20/32),(DOMAIN,swscan.apple.com)),REJECT
+- AND,((SRC-IP-CIDR,192.168.50.20/32),(DOMAIN,swquery.apple.com)),REJECT
+- AND,((SRC-IP-CIDR,192.168.50.20/32),(DOMAIN,swdownload.apple.com)),REJECT
+- AND,((SRC-IP-CIDR,192.168.50.20/32),(DOMAIN,swcdn.apple.com)),REJECT
+- AND,((SRC-IP-CIDR,192.168.50.20/32),(DOMAIN,swdist.apple.com)),REJECT
+- DOMAIN,mesu.apple.com,屏蔽苹果更新
+- DOMAIN,gdmf.apple.com,屏蔽苹果更新
+- DOMAIN,updates-http.cdn-apple.com,屏蔽苹果更新
+- DOMAIN,ns.itunes.apple.com,屏蔽苹果更新
+- DOMAIN-SUFFIX,appldnld.apple.com,屏蔽苹果更新
+- DOMAIN-SUFFIX,chatgpt.com,ChatGpt
+- DOMAIN-SUFFIX,openai.com,ChatGpt
+- DOMAIN-SUFFIX,oaistatic.com,ChatGpt
+- DOMAIN-SUFFIX,oaiusercontent.com,ChatGpt
+- DOMAIN-SUFFIX,gemini.google.com,Gemini
+- DOMAIN-SUFFIX,bard.google.com,Gemini
+- DOMAIN-SUFFIX,ai.google.dev,Gemini
+- "DOMAIN-SUFFIX,meta.ai,\U0001F1FA\U0001F1F8 美国链式故转"
+- DOMAIN-SUFFIX,claude.ai,ChatGpt
+- DOMAIN-SUFFIX,anthropic.com,ChatGpt
+- DOMAIN-SUFFIX,rustdesk.com,RustDesk
+- DOMAIN,rs-ny.rustdesk.com,RustDesk
+- DOMAIN,rs-sg.rustdesk.com,RustDesk
+- DOMAIN,rs-cn.rustdesk.com,RustDesk
+- DOMAIN,rs-us.rustdesk.com,RustDesk
+- DOMAIN,hbbs.rustdesk.com,RustDesk
+- DOMAIN,hbbr.rustdesk.com,RustDesk
+- "DOMAIN-SUFFIX,githubusercontent.com,\U0001F1FA\U0001F1F8 美国链式故转"
+- "DOMAIN-KEYWORD,github,\U0001F1FA\U0001F1F8 美国链式故转"
+- "DOMAIN-SUFFIX,ipinfo.io,\U0001F1FA\U0001F1F8 美国链式故转"
+- "DOMAIN-SUFFIX,ip.sb,\U0001F1FA\U0001F1F8 美国链式故转"
+- "DOMAIN-SUFFIX,ifconfig.me,\U0001F1FA\U0001F1F8 美国链式故转"
+- "DOMAIN-SUFFIX,icanhazip.com,\U0001F1FA\U0001F1F8 美国链式故转"
+- "DOMAIN-SUFFIX,ifconfig.co,\U0001F1FA\U0001F1F8 美国链式故转"
+- "DOMAIN-SUFFIX,myip.ipip.net,\U0001F1FA\U0001F1F8 美国链式故转"
+- DOMAIN-KEYWORD,binance,币安
+- DOMAIN-KEYWORD,okx,欧易
+- DOMAIN-KEYWORD,okex,欧易
+- DOMAIN,monitor-frontend-collector.a.bybit-aws.com,Bybit
+- DOMAIN,bybit-exchange.github.io,Bybit
+- DOMAIN,app-measurement.com,Bybit
+- DOMAIN-SUFFIX,bybit.com,Bybit
+- DOMAIN-SUFFIX,bybit.biz,Bybit
+- DOMAIN-SUFFIX,bytick.com,Bybit
+- DOMAIN-SUFFIX,bycsi.com,Bybit
+- DOMAIN-SUFFIX,byapis.com,Bybit
+- DOMAIN-SUFFIX,bycbe.com,Bybit
+- DOMAIN-SUFFIX,bymj.io,Bybit
+- DOMAIN-SUFFIX,byabcde.com,Bybit
+- DOMAIN-SUFFIX,byapps.net,Bybit
+- DOMAIN-SUFFIX,byd3c3.com,Bybit
+- DOMAIN-SUFFIX,bybdc6.com,Bybit
+- DOMAIN-KEYWORD,bybit,Bybit
+- DOMAIN-KEYWORD,bytick,Bybit
+- DOMAIN-SUFFIX,tiktok.com,TikTok
+- DOMAIN-SUFFIX,tiktokv.com,TikTok
+- DOMAIN-SUFFIX,tiktokcdn.com,TikTok
+- DOMAIN-SUFFIX,musical.ly,TikTok
+- DOMAIN-KEYWORD,tiktok,TikTok
+- RULE-SET,TikTok,TikTok
+- DOMAIN-KEYWORD,n26,N26
+- DOMAIN-SUFFIX,n26.com,N26
+- DOMAIN-KEYWORD,safepal,SafePal
+- DOMAIN-SUFFIX,safepal.com,SafePal
+- DOMAIN-SUFFIX,safepal.io,SafePal
+- DOMAIN-KEYWORD,wise,Wise
+- DOMAIN-SUFFIX,wise.com,Wise
+- DOMAIN-SUFFIX,transferwise.com,Wise
+- DOMAIN,dns.msftncsi.com,DIRECT
+- DOMAIN,msftconnecttest.com,DIRECT
+- DOMAIN,www.msftconnecttest.com,DIRECT
+- DOMAIN,connectivitycheck.gstatic.com,DIRECT
+- DOMAIN,captive.apple.com,DIRECT
+- DOMAIN,network-test.debian.org,DIRECT
+- DOMAIN-SUFFIX,speedtest.net,DIRECT
+- DOMAIN-KEYWORD,speedtest,DIRECT
+- DOMAIN-SUFFIX,testflight.apple.com,苹果服务
+- DOMAIN-SUFFIX,appstoreconnect.apple.com,苹果服务
+- DOMAIN-SUFFIX,beta.itunes.apple.com,DIRECT
+- DOMAIN-SUFFIX,itunes.apple.com,DIRECT
+- DOMAIN-SUFFIX,apps.apple.com,DIRECT
+- DOMAIN-SUFFIX,mzstatic.com,DIRECT
+- DOMAIN-SUFFIX,icloud.com,DIRECT
+- DOMAIN-SUFFIX,icloud-content.com,DIRECT
+- DOMAIN-SUFFIX,apple.com,DIRECT
+- DOMAIN-SUFFIX,aaplimg.com,DIRECT
+- DOMAIN-SUFFIX,apple-dns.net,DIRECT
+- DOMAIN-SUFFIX,ess.apple.com,DIRECT
+- DOMAIN-SUFFIX,digicert.com,DIRECT
+- IP-CIDR,203.208.0.0/16,DIRECT
+- IP-CIDR,120.253.0.0/16,DIRECT
+- IP-CIDR,120.252.0.0/16,DIRECT
+- IP-CIDR,119.39.0.0/16,DIRECT
+- DOMAIN-SUFFIX,gvt1.com,谷歌服务
+- DOMAIN-SUFFIX,gvt2.com,谷歌服务
+- DOMAIN-SUFFIX,googleapis.cn,谷歌服务
+- DOMAIN,xn--ngstr-lra8j.com,谷歌服务
+- DOMAIN-SUFFIX,gmail.com,谷歌服务
+- DOMAIN-KEYWORD,microsoft,微软服务
+- DOMAIN-SUFFIX,live.com,微软服务
+- DOMAIN-SUFFIX,disneyplus.com,stream-link
+- DOMAIN-SUFFIX,bamgrid.com,stream-link
+- DOMAIN-SUFFIX,dssott.com,stream-link
+- DOMAIN-SUFFIX,starplus.com,stream-link
+- DOMAIN-SUFFIX,stream-link.org,stream-link
+- DOMAIN-KEYWORD,m3u,stream-link
+- DOMAIN-KEYWORD,iptv,stream-link
+- DOMAIN-KEYWORD,epg,stream-link
+- "DOMAIN-SUFFIX,ctitv.com.tw,\U0001F30F Asia"
+- "DOMAIN-SUFFIX,tvbs.com.tw,\U0001F30F Asia"
+- DOMAIN-KEYWORD,akamaized,stream-link
+- DOMAIN-KEYWORD,cloudfront,stream-link
+- DOMAIN-KEYWORD,fastly,stream-link
+- "DOMAIN-SUFFIX,instagram.com,\U0001F1FA\U0001F1F8 美国链式故转"
+- "DOMAIN-SUFFIX,vfsglobal.com,\U0001F1FA\U0001F1F8 美国链式故转"
+- "DOMAIN-SUFFIX,docker.com,\U0001F1FA\U0001F1F8 美国链式故转"
+- "DOMAIN-SUFFIX,copilot.microsoft.com,\U0001F5FA️ Non-HK"
+- DST-PORT,6881-6889,DIRECT
+- DST-PORT,51413,DIRECT
+- RULE-SET,MyReject,REJECT
+- RULE-SET,Advertising,广告拦截
+- RULE-SET,Privacy,应用净化
+- RULE-SET,MyDirect,DIRECT
+- RULE-SET,PrivateTracker,DIRECT
+- RULE-SET,GoogleFCM,谷歌FCM
+- RULE-SET,OneDrive,微软云盘
+- RULE-SET,Microsoft,微软服务
+- RULE-SET,Apple,苹果服务
+- RULE-SET,Google,谷歌服务
+- RULE-SET,PayPal,PayPal
+- RULE-SET,Telegram,电报消息
+- RULE-SET,OpenAI,ChatGpt
+- RULE-SET,Gemini,Gemini
+- RULE-SET,GoogleVoice,Voice
+- RULE-SET,Whatsapp,WhatsApp
+- RULE-SET,Line,LINE
+- RULE-SET,NetEaseMusic,网易音乐
+- RULE-SET,YouTube,YouTube
+- RULE-SET,Netflix,Netflix
+- RULE-SET,Spotify,Spotify
+- RULE-SET,Bahamut,巴哈姆特
+- RULE-SET,BiliBili,哔哩哔哩
+- RULE-SET,JOOX,JOOX
+- RULE-SET,ChinaMedia,国内媒体
+- RULE-SET,GlobalMedia,国外媒体
+- RULE-SET,Epic,游戏平台
+- RULE-SET,Origin,游戏平台
+- RULE-SET,Sony,游戏平台
+- RULE-SET,Steam,游戏平台
+- RULE-SET,Nintendo,游戏平台
+- RULE-SET,Download,全球直连
+- RULE-SET,Binance,币安
+- RULE-SET,Crypto,节点选择
+- RULE-SET,OKX,欧易
+- RULE-SET,ChinaMax,全球直连
+- RULE-SET,Lan,全球直连
+- RULE-SET,Proxy,节点选择
+- GEOIP,CN,DIRECT,no-resolve
+- PROCESS-NAME,aria2c,DIRECT
+- PROCESS-NAME,BitComet,DIRECT
+- PROCESS-NAME,fdm,DIRECT
+- PROCESS-NAME,NetTransport,DIRECT
+- PROCESS-NAME,qbittorrent,DIRECT
+- PROCESS-NAME,Thunder,DIRECT
+- PROCESS-NAME,transmission-daemon,DIRECT
+- PROCESS-NAME,transmission-qt,DIRECT
+- PROCESS-NAME,uTorrent,DIRECT
+- PROCESS-NAME,WebTorrent,DIRECT
+- PROCESS-NAME,Folx,DIRECT
+- PROCESS-NAME,Transmission,DIRECT
+- PROCESS-NAME,WebTorrent Helper,DIRECT
+- PROCESS-NAME,v2ray,DIRECT
+- PROCESS-NAME,ss-local,DIRECT
+- PROCESS-NAME,ssr-local,DIRECT
+- PROCESS-NAME,ss-redir,DIRECT
+- PROCESS-NAME,ssr-redir,DIRECT
+- PROCESS-NAME,ss-server,DIRECT
+- PROCESS-NAME,trojan-go,DIRECT
+- PROCESS-NAME,xray,DIRECT
+- PROCESS-NAME,hysteria,DIRECT
+- PROCESS-NAME,singbox,DIRECT
+- PROCESS-NAME,UUBooster,DIRECT
+- PROCESS-NAME,uugamebooster,DIRECT
+- DST-PORT,80,漏网之鱼
+- DST-PORT,443,漏网之鱼
+- DST-PORT,80,DIRECT
+- DST-PORT,443,DIRECT
+- MATCH,DIRECT
+redir-port: 7892
+tproxy-port: 7895
+port: 7890
+socks-port: 7891
+external-controller: 0.0.0.0:9090
+secret: '123456'
+bind-address: "*"
+external-ui: "/usr/share/openclash/ui"
+external-ui-name: metacubexd
+external-ui-url: https://codeload.github.com/MetaCubeX/metacubexd/zip/refs/heads/gh-pages
+keep-alive-interval: 15
+keep-alive-idle: 600
+geodata-loader: standard
+geox-url:
+  mmdb: https://testingcf.jsdelivr.net/gh/alecthw/mmdb_china_ip_list@release/lite/Country.mmdb
+  geoip: https://testingcf.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geoip.dat
+  geosite: https://testingcf.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat
+profile:
+  store-selected: true
+  store-fake-ip: true
+ntp:
+  enable: true
+  server: time.apple.com
+  port: 123
+  interval: 30
+  write-to-system: true
