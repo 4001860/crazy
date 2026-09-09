@@ -97,7 +97,14 @@ DOMAIN-SUFFIX,kunlunjyk.com
 # --- 美团与出行/点评 ---
 DOMAIN-SUFFIX,meituan.com
 DOMAIN-SUFFIX,meituan.net
+DOMAIN-SUFFIX,meituanimg.com
+DOMAIN-SUFFIX,meituan.org
+DOMAIN-SUFFIX,meituan-gc.com
+DOMAIN-SUFFIX,neixin.cn
 DOMAIN-SUFFIX,dianping.com
+DOMAIN-SUFFIX,dpfile.com
+DOMAIN-KEYWORD,meituan
+DOMAIN-KEYWORD,dianping
 DOMAIN-SUFFIX,autonavi.com
 DOMAIN-SUFFIX,amap.com
 DOMAIN-SUFFIX,bwton.com
@@ -161,6 +168,14 @@ DOMAIN-SUFFIX,haier.com
 DOMAIN-SUFFIX,uplus.net.cn
 DOMAIN-KEYWORD,haier
 DOMAIN-KEYWORD,uplus
+# 美的美居 (Midea Meiju Smart Home)
+DOMAIN-SUFFIX,midea.com
+DOMAIN-SUFFIX,midea.com.cn
+DOMAIN-SUFFIX,smartmidea.net
+DOMAIN-SUFFIX,msmartlife.com
+DOMAIN-SUFFIX,meiju.net
+DOMAIN-KEYWORD,midea
+DOMAIN-KEYWORD,meiju
 # 欧普智能照明 (OPPLE Smart Lights)
 DOMAIN-SUFFIX,opple.com
 DOMAIN-SUFFIX,opple.com.cn
@@ -205,6 +220,16 @@ DOMAIN-SUFFIX,xhey.top
 DOMAIN-SUFFIX,keyoo.com
 DOMAIN-SUFFIX,cainiao.com
 DOMAIN-SUFFIX,jd.com
+DOMAIN-SUFFIX,jd.hk
+DOMAIN-SUFFIX,jdcloud.com
+DOMAIN-SUFFIX,jcloudlb.com
+DOMAIN-SUFFIX,jdpay.com
+DOMAIN-SUFFIX,jdcache.com
+DOMAIN-SUFFIX,jdcdn.com
+DOMAIN-SUFFIX,3.cn
+DOMAIN-SUFFIX,360buyimg.com
+DOMAIN-KEYWORD,jingdong
+DOMAIN-KEYWORD,360buy
 DOMAIN-SUFFIX,115.com
 
 # === 杂项直连域名 ===
