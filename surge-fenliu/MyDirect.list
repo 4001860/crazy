@@ -133,13 +133,54 @@ DOMAIN-SUFFIX,xesim.cc
 DOMAIN-SUFFIX,xesim.net
 DOMAIN-SUFFIX,cjjd14.com
 DOMAIN-SUFFIX,jomoxc.com
-DOMAIN-SUFFIX,opple.com
+# === 全屋智能家电与 IoT 云端直连 ===
+# 石头扫地机 (Roborock G20)
+DOMAIN-SUFFIX,roborock.com
+DOMAIN-KEYWORD,roborock
+IP-CIDR,114.67.111.45/32,no-resolve
+IP-CIDR,47.111.0.159/32,no-resolve
+IP-CIDR,8.136.39.221/32,no-resolve
+IP-CIDR,183.66.100.0/24,no-resolve
+# 米家 / 小米智能家居 (MiAi音箱 / 小米电视 / 路由器 / 传感器)
 DOMAIN-SUFFIX,mi.com
 DOMAIN-SUFFIX,xiaomi.com
+DOMAIN-SUFFIX,xiaomi.net
 DOMAIN-SUFFIX,miot-spec.org
+DOMAIN-SUFFIX,xiaomixiaoai.com
+DOMAIN-SUFFIX,miui.com
+DOMAIN-KEYWORD,xiaomi
+# 西门子智能洗碗机 (Home Connect / 晶御智能)
+DOMAIN-SUFFIX,home-connect.com
+DOMAIN-SUFFIX,home-connect.cn
+DOMAIN-SUFFIX,bshg.com
+DOMAIN-SUFFIX,siemens-home.bsh-group.com
+DOMAIN-KEYWORD,home-connect
+# 海尔智能冰箱/家电 (Haier Smart / 智家 U+)
+DOMAIN-SUFFIX,haier.net
+DOMAIN-SUFFIX,haier.com
+DOMAIN-SUFFIX,uplus.net.cn
+DOMAIN-KEYWORD,haier
+DOMAIN-KEYWORD,uplus
+# 欧普智能照明 (OPPLE Smart Lights)
+DOMAIN-SUFFIX,opple.com
+DOMAIN-SUFFIX,opple.com.cn
+DOMAIN-KEYWORD,opple
+# 大华乐橙智能摄像机 (IMOU 智能安防)
 DOMAIN-SUFFIX,imou.com
+DOMAIN-SUFFIX,imoulife.com
+DOMAIN-SUFFIX,lechange.cn
+# 好太太智能晾衣机 (HOTATA / 涂鸦 IoT 模组)
+DOMAIN-SUFFIX,hotata.com
+DOMAIN-SUFFIX,tuya.com
+DOMAIN-SUFFIX,tuyaeu.com
+DOMAIN-SUFFIX,tuyaus.com
+DOMAIN-SUFFIX,tuyacn.com
+# 九号电动车 (Ninebot)
 DOMAIN-SUFFIX,ninebot.com
-DOMAIN-SUFFIX,roborock.com
+DOMAIN-SUFFIX,segway.com
+# 乐鑫物联 (Espressif IoT)
+DOMAIN-SUFFIX,espressif.com
+DOMAIN-SUFFIX,espressif.cn
 DOMAIN-SUFFIX,zhaopin.com
 DOMAIN-SUFFIX,sinopec.com
 DOMAIN-SUFFIX,sinopecsales.com
