@@ -19,30 +19,63 @@ DOMAIN-SUFFIX,yximgs.com
 DOMAIN-SUFFIX,kwimgs.com
 DOMAIN-SUFFIX,gifshow.com
 
-# === 阿里系生态 ===
+# === 阿里系生态 (淘宝/支付宝/闲鱼/天猫) ===
 DOMAIN-SUFFIX,taobao.com
+DOMAIN-SUFFIX,tbcache.com
+DOMAIN-SUFFIX,tbcdn.cn
+DOMAIN-SUFFIX,taobaocdn.com
+DOMAIN-KEYWORD,taobao
 DOMAIN-SUFFIX,alipay.com
+DOMAIN-SUFFIX,alipayobjects.com
+DOMAIN-SUFFIX,alipaylog.com
+DOMAIN-KEYWORD,alipay
 DOMAIN-SUFFIX,aliyun.com
 DOMAIN-SUFFIX,aliyuncs.com
+DOMAIN-SUFFIX,alicdn.com
+DOMAIN-SUFFIX,aliimg.com
+DOMAIN-SUFFIX,alikunlun.com
+DOMAIN-SUFFIX,alibaba.com
+DOMAIN-SUFFIX,aliapp.org
+DOMAIN-SUFFIX,alibabadns.com
 DOMAIN-SUFFIX,tmall.com
+DOMAIN-SUFFIX,tmall.hk
 DOMAIN-SUFFIX,ele.me
 DOMAIN-SUFFIX,dingtalk.com
 DOMAIN-SUFFIX,alipan.com
 DOMAIN-SUFFIX,ucweb.com
 DOMAIN-SUFFIX,alibabachengdun.com
+DOMAIN-SUFFIX,goofish.com
+DOMAIN-SUFFIX,xianyu.com
+DOMAIN-SUFFIX,2.taobao.com
+DOMAIN-SUFFIX,idle.taobao.com
+DOMAIN-KEYWORD,xianyu
+DOMAIN-KEYWORD,goofish
 
-# === 腾讯系生态 ===
+# === 腾讯系生态 (微信/企业微信/小程序/腾讯云) ===
 DOMAIN-SUFFIX,qq.com
 DOMAIN-SUFFIX,weixin.com
-DOMAIN-SUFFIX,tencent.com
 DOMAIN-SUFFIX,wechat.com
-DOMAIN-SUFFIX,tencent-cloud.net
 DOMAIN-SUFFIX,weixinbridge.com
+DOMAIN-SUFFIX,wxs.qq.com
+DOMAIN-SUFFIX,servicewechat.com
+DOMAIN-SUFFIX,weixin.qq.com
+DOMAIN-KEYWORD,weixin
+DOMAIN-KEYWORD,wechat
+DOMAIN-SUFFIX,wxwork.com
+DOMAIN-SUFFIX,work.weixin.qq.com
+DOMAIN-KEYWORD,wxwork
+DOMAIN-SUFFIX,tencent.com
+DOMAIN-SUFFIX,tencent-cloud.net
+DOMAIN-SUFFIX,tencent-cloud.com
+DOMAIN-SUFFIX,tencentcs.com
+DOMAIN-SUFFIX,qcloud.com
+DOMAIN-SUFFIX,myqcloud.com
 DOMAIN-SUFFIX,qlogo.cn
 DOMAIN-SUFFIX,qpic.cn
-DOMAIN-SUFFIX,qcloud.com
-DOMAIN-SUFFIX,tencent-cloud.com
-DOMAIN-SUFFIX,myqcloud.com
+DOMAIN-SUFFIX,gtimg.cn
+DOMAIN-SUFFIX,gtimg.com
+DOMAIN-SUFFIX,idqqimg.com
+DOMAIN-SUFFIX,cdn-go.cn
 
 # === 字节跳动底层与云服务 ===
 DOMAIN-SUFFIX,bytegecko.com
@@ -53,12 +86,18 @@ DOMAIN-SUFFIX,onewsimg.com
 DOMAIN-SUFFIX,vegslb.com
 DOMAIN-SUFFIX,bytednsdoc.com
 
-# === 网易系 ===
+# === 网易系 (有道翻译官/网易邮箱) ===
 DOMAIN-KEYWORD,youdao
 DOMAIN-SUFFIX,youdao.com
 DOMAIN-SUFFIX,ydstatic.com
+DOMAIN-SUFFIX,youdaoui.com
+DOMAIN-SUFFIX,dict.youdao.com
+DOMAIN-SUFFIX,fanyi.youdao.com
 DOMAIN-SUFFIX,163.com
+DOMAIN-SUFFIX,126.com
 DOMAIN-SUFFIX,126.net
+DOMAIN-SUFFIX,127.net
+DOMAIN-SUFFIX,netease.com
 DOMAIN-SUFFIX,netease.im
 DOMAIN-SUFFIX,afunapp.com
 DOMAIN-SUFFIX,qiyukf.com
@@ -82,6 +121,12 @@ DOMAIN-SUFFIX,cmbc.com.cn
 DOMAIN-SUFFIX,cgbchina.com.cn
 DOMAIN-SUFFIX,pingan.com.cn
 DOMAIN-SUFFIX,pingan.com
+DOMAIN-SUFFIX,pingan.cn
+DOMAIN-SUFFIX,pa18.com
+DOMAIN-SUFFIX,paic.com.cn
+DOMAIN-SUFFIX,pahaoche.com
+DOMAIN-SUFFIX,autohome.com.cn
+DOMAIN-KEYWORD,pingan
 DOMAIN-SUFFIX,cebbank.com
 DOMAIN-SUFFIX,cib.com.cn
 DOMAIN-SUFFIX,hxb.com.cn
@@ -89,7 +134,6 @@ DOMAIN-SUFFIX,bankofbeijing.com.cn
 DOMAIN-SUFFIX,bosc.cn
 DOMAIN-SUFFIX,unionpay.com
 DOMAIN-SUFFIX,95516.com
-DOMAIN-SUFFIX,alipayobjects.com
 DOMAIN-SUFFIX,netsunion.com
 DOMAIN-SUFFIX,95504.net
 DOMAIN-SUFFIX,kunlunjyk.com
@@ -134,6 +178,11 @@ DOMAIN-SUFFIX,fengimg.com
 
 # === 国内综合应用与硬件 ===
 DOMAIN-SUFFIX,pinduoduo.com
+DOMAIN-SUFFIX,yangkeduo.com
+DOMAIN-SUFFIX,pddpic.com
+DOMAIN-SUFFIX,pinduoduoimg.com
+DOMAIN-KEYWORD,pinduoduo
+DOMAIN-KEYWORD,yangkeduo
 DOMAIN-SUFFIX,xiaohongshu.com
 DOMAIN-SUFFIX,xhscdn.com
 DOMAIN-SUFFIX,xesim.cc
@@ -155,7 +204,12 @@ DOMAIN-SUFFIX,xiaomi.net
 DOMAIN-SUFFIX,miot-spec.org
 DOMAIN-SUFFIX,xiaomixiaoai.com
 DOMAIN-SUFFIX,miui.com
+DOMAIN-SUFFIX,mijia.tech
+DOMAIN-SUFFIX,io.mi.com
+DOMAIN-SUFFIX,home.mi.com
+DOMAIN-SUFFIX,account.xiaomi.com
 DOMAIN-KEYWORD,xiaomi
+DOMAIN-KEYWORD,mijia
 # 西门子智能洗碗机 (Home Connect / 晶御智能)
 DOMAIN-SUFFIX,home-connect.com
 DOMAIN-SUFFIX,home-connect.cn
@@ -184,12 +238,20 @@ DOMAIN-KEYWORD,opple
 DOMAIN-SUFFIX,imou.com
 DOMAIN-SUFFIX,imoulife.com
 DOMAIN-SUFFIX,lechange.cn
+DOMAIN-SUFFIX,lechange.com
+DOMAIN-SUFFIX,dahuatech.com
+DOMAIN-KEYWORD,imou
+DOMAIN-KEYWORD,lechange
 # 好太太智能晾衣机 (HOTATA / 涂鸦 IoT 模组)
 DOMAIN-SUFFIX,hotata.com
+DOMAIN-SUFFIX,hotata.cn
+DOMAIN-KEYWORD,hotata
 DOMAIN-SUFFIX,tuya.com
 DOMAIN-SUFFIX,tuyaeu.com
 DOMAIN-SUFFIX,tuyaus.com
 DOMAIN-SUFFIX,tuyacn.com
+DOMAIN-SUFFIX,smart321.com
+DOMAIN-KEYWORD,tuya
 # 九号电动车 (Ninebot)
 DOMAIN-SUFFIX,ninebot.com
 DOMAIN-SUFFIX,segway.com
@@ -200,12 +262,28 @@ DOMAIN-SUFFIX,zhaopin.com
 DOMAIN-SUFFIX,sinopec.com
 DOMAIN-SUFFIX,sinopecsales.com
 DOMAIN-SUFFIX,echatsoft.com
-DOMAIN-SUFFIX,aliapp.org
 DOMAIN-SUFFIX,ecouser.net
 DOMAIN-SUFFIX,issks.com
 DOMAIN-SUFFIX,10010.com
 DOMAIN-SUFFIX,10086.cn
+DOMAIN-SUFFIX,10086.com
+DOMAIN-SUFFIX,cmcc.com
+DOMAIN-SUFFIX,migucloud.com
+DOMAIN-SUFFIX,migu.cn
+DOMAIN-KEYWORD,10086
+DOMAIN-KEYWORD,cmcc
 DOMAIN-SUFFIX,189.cn
+DOMAIN-SUFFIX,21cn.com
+DOMAIN-SUFFIX,ctwing.cn
+DOMAIN-SUFFIX,chinatelecom.com.cn
+DOMAIN-SUFFIX,ct10000.com
+DOMAIN-SUFFIX,xiaoyi.cn
+DOMAIN-KEYWORD,chinatelecom
+# 翼支付
+DOMAIN-SUFFIX,bestpay.com.cn
+DOMAIN-SUFFIX,bestpay.cn
+DOMAIN-SUFFIX,bestpay.net
+DOMAIN-KEYWORD,bestpay
 DOMAIN-SUFFIX,ikuai8.com
 DOMAIN-SUFFIX,camscanner.com
 DOMAIN-SUFFIX,intsig.net
@@ -216,6 +294,22 @@ DOMAIN-SUFFIX,qingtenglove.com
 DOMAIN-KEYWORD,qingtenglove
 DOMAIN-KEYWORD,qingteng
 DOMAIN-KEYWORD,qingtengzhilian
+
+# --- 皖事通 (安徽政务) ---
+DOMAIN-SUFFIX,ahzwfw.gov.cn
+DOMAIN-SUFFIX,wannengcard.com
+DOMAIN-KEYWORD,wanshitong
+DOMAIN-KEYWORD,ahzwfw
+
+# --- 我爱卡社区管家 ---
+DOMAIN-SUFFIX,51credit.com
+DOMAIN-SUFFIX,woaika.com
+DOMAIN-KEYWORD,woaika
+
+# --- 添可生活 (Tineco) ---
+DOMAIN-SUFFIX,tineco.com
+DOMAIN-SUFFIX,tineco.com.cn
+DOMAIN-KEYWORD,tineco
 DOMAIN-SUFFIX,xhey.top
 DOMAIN-SUFFIX,keyoo.com
 DOMAIN-SUFFIX,cainiao.com
