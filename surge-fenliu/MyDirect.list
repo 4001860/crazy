@@ -150,6 +150,15 @@ DOMAIN-SUFFIX,pinganbank.com.cn
 DOMAIN-SUFFIX,pabank.com.cn
 DOMAIN-SUFFIX,pabank.com
 DOMAIN-KEYWORD,pingan
+
+# 平安壹钱包 / 万里通 / 油卡车主生活及加油核销接口
+DOMAIN-SUFFIX,1qianbao.com
+DOMAIN-SUFFIX,yqb.com
+DOMAIN-SUFFIX,yqbimg.net
+DOMAIN-SUFFIX,wanlitong.com
+DOMAIN-SUFFIX,youjiajk.com
+DOMAIN-KEYWORD,1qianbao
+DOMAIN-KEYWORD,wanlitong
 DOMAIN-KEYWORD,haochezhu
 DOMAIN-KEYWORD,pasc
 DOMAIN-KEYWORD,paic
