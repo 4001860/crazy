@@ -125,8 +125,12 @@ DOMAIN-SUFFIX,pingan.cn
 DOMAIN-SUFFIX,pa18.com
 DOMAIN-SUFFIX,paic.com.cn
 DOMAIN-SUFFIX,pahaoche.com
-DOMAIN-SUFFIX,autohome.com.cn
+DOMAIN-SUFFIX,haochezhu.com
+DOMAIN-SUFFIX,haochezhu.cn
+DOMAIN-SUFFIX,pinganfn.com
+DOMAIN-SUFFIX,pingan.com.hk
 DOMAIN-KEYWORD,pingan
+DOMAIN-KEYWORD,haochezhu
 DOMAIN-SUFFIX,cebbank.com
 DOMAIN-SUFFIX,cib.com.cn
 DOMAIN-SUFFIX,hxb.com.cn
@@ -259,8 +263,16 @@ DOMAIN-SUFFIX,segway.com
 DOMAIN-SUFFIX,espressif.com
 DOMAIN-SUFFIX,espressif.cn
 DOMAIN-SUFFIX,zhaopin.com
+# --- 中石化易捷加油 ---
 DOMAIN-SUFFIX,sinopec.com
 DOMAIN-SUFFIX,sinopecsales.com
+DOMAIN-SUFFIX,sinopecgas.com
+DOMAIN-SUFFIX,yjgas.net
+DOMAIN-SUFFIX,yijiegas.com
+DOMAIN-SUFFIX,yijie365.com
+DOMAIN-SUFFIX,sinopec-gas.cn
+DOMAIN-KEYWORD,sinopec
+DOMAIN-KEYWORD,yijie
 DOMAIN-SUFFIX,echatsoft.com
 DOMAIN-SUFFIX,ecouser.net
 DOMAIN-SUFFIX,issks.com
@@ -285,8 +297,14 @@ DOMAIN-SUFFIX,bestpay.cn
 DOMAIN-SUFFIX,bestpay.net
 DOMAIN-KEYWORD,bestpay
 DOMAIN-SUFFIX,ikuai8.com
+# --- 扫描全能王 (合合信息) ---
 DOMAIN-SUFFIX,camscanner.com
 DOMAIN-SUFFIX,intsig.net
+DOMAIN-SUFFIX,intsig.com
+DOMAIN-SUFFIX,cs-api.com
+DOMAIN-SUFFIX,textin.com
+DOMAIN-KEYWORD,camscanner
+DOMAIN-KEYWORD,intsig
 DOMAIN-SUFFIX,lenglengyu.com
 DOMAIN-SUFFIX,zztfly.com
 DOMAIN-SUFFIX,wfdata.club
@@ -295,16 +313,28 @@ DOMAIN-KEYWORD,qingtenglove
 DOMAIN-KEYWORD,qingteng
 DOMAIN-KEYWORD,qingtengzhilian
 
-# --- 皖事通 (安徽政务) ---
+# --- 皖事通 (安徽政务服务) ---
 DOMAIN-SUFFIX,ahzwfw.gov.cn
+DOMAIN-SUFFIX,ah.gov.cn
+DOMAIN-SUFFIX,anhui.gov.cn
 DOMAIN-SUFFIX,wannengcard.com
+DOMAIN-SUFFIX,anhuinews.com
+DOMAIN-SUFFIX,ahga.gov.cn
 DOMAIN-KEYWORD,wanshitong
 DOMAIN-KEYWORD,ahzwfw
+DOMAIN-KEYWORD,anhui
 
 # --- 我爱卡社区管家 ---
 DOMAIN-SUFFIX,51credit.com
 DOMAIN-SUFFIX,woaika.com
 DOMAIN-KEYWORD,woaika
+
+# --- 飞客 (FlyerTea / 飞客茶馆) ---
+DOMAIN-SUFFIX,flyertea.com
+DOMAIN-SUFFIX,feikeapp.com
+DOMAIN-SUFFIX,flyer.chat
+DOMAIN-KEYWORD,flyertea
+DOMAIN-KEYWORD,feike
 
 # --- 添可生活 (Tineco) ---
 DOMAIN-SUFFIX,tineco.com
