@@ -284,7 +284,31 @@ DOMAIN-SUFFIX,migucloud.com
 DOMAIN-SUFFIX,migu.cn
 DOMAIN-KEYWORD,10086
 DOMAIN-KEYWORD,cmcc
-# --- 中国电信 / 小翼管家 (天翼智慧家庭/天翼云/天翼看家/设备平台) ---
+# --- 中国电信 / 小翼管家 (天翼智慧家庭/天翼云/天翼看家/设备平台/各省H5/图标CDN) ---
+DOMAIN-SUFFIX,ah.189.cn
+DOMAIN-SUFFIX,ah189.cn
+DOMAIN-SUFFIX,189ah.cn
+DOMAIN-SUFFIX,ahtelecom.com.cn
+DOMAIN-SUFFIX,ahtelecom.cn
+DOMAIN-SUFFIX,ctah.com.cn
+DOMAIN-SUFFIX,tygq.com
+DOMAIN-SUFFIX,tygq.cn
+DOMAIN-SUFFIX,189cube.com
+DOMAIN-SUFFIX,ehome189.cn
+DOMAIN-SUFFIX,ctoss.cn
+DOMAIN-SUFFIX,ctyunoss.cn
+DOMAIN-SUFFIX,ctyun.com
+DOMAIN-SUFFIX,ctyun.net
+DOMAIN-SUFFIX,ctyun.online
+DOMAIN-SUFFIX,ctyuninner.com
+DOMAIN-SUFFIX,chinatelecom-ec.com
+DOMAIN-SUFFIX,chinatelecom-h.com
+DOMAIN-SUFFIX,chinatelecom.com.hk
+DOMAIN-SUFFIX,chinatelecom.com.mo
+DOMAIN-SUFFIX,chntel.com
+DOMAIN-SUFFIX,smartwifi.189.cn
+DOMAIN-SUFFIX,wifi.189.cn
+DOMAIN-SUFFIX,h5.189.cn
 DOMAIN-SUFFIX,189.cn
 DOMAIN-SUFFIX,189jk.cn
 DOMAIN-SUFFIX,189qas.com
