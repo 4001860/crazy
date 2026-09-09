@@ -592,3 +592,9 @@ DOMAIN-KEYWORD,keepfrds
 DOMAIN-KEYWORD,hdsky
 DOMAIN-KEYWORD,sunnypt
 DOMAIN-KEYWORD,totheglory
+
+# 芜湖住房公积金 & 皖事通芜湖分厅
+DOMAIN-SUFFIX,wuhugjj.top
+DOMAIN-SUFFIX,wuhugjj.gov.cn
+DOMAIN-SUFFIX,wuhu.gov.cn
+DOMAIN-KEYWORD,wuhugjj
