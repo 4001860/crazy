@@ -285,6 +285,12 @@ DOMAIN-SUFFIX,migu.cn
 DOMAIN-KEYWORD,10086
 DOMAIN-KEYWORD,cmcc
 # --- 中国电信 / 小翼管家 (天翼智慧家庭/天翼云/天翼看家/设备平台/各省H5/图标CDN) ---
+# --- 小翼管家核心业务与静态资源 (实测 Surge 抓包) ---
+DOMAIN-SUFFIX,189smarthome.com
+DOMAIN-SUFFIX,ott4china.com
+DOMAIN-KEYWORD,189smarthome
+DOMAIN-KEYWORD,ott4china
+DOMAIN-KEYWORD,xygj
 DOMAIN-SUFFIX,ah.189.cn
 DOMAIN-SUFFIX,ah189.cn
 DOMAIN-SUFFIX,189ah.cn
