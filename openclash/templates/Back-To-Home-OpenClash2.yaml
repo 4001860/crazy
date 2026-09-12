@@ -136,12 +136,12 @@ dns:
   - "+.services.googleapis.cn"
   - "+.googleapis.cn"
   - "+.xn--ngstr-lra8j.com"
-  - "+.apple.com"
-  - "+.icloud.com"
-  - "+.icloud-content.com"
-  - "+.mzstatic.com"
-  - "+.itunes.apple.com"
-  - "+.appstoreconnect.apple.com"
+  # - "+.apple.com"
+  # - "+.icloud.com"
+  # - "+.icloud-content.com"
+  # - "+.mzstatic.com"
+  # - "+.itunes.apple.com"
+  # - "+.appstoreconnect.apple.com"
   - "+.digicert.com"
   - "+.rustdesk.com"
   - rs-ny.rustdesk.com
@@ -1704,9 +1704,11 @@ rules:
 - DOMAIN,network-test.debian.org,DIRECT
 - DOMAIN-SUFFIX,speedtest.net,DIRECT
 - DOMAIN-KEYWORD,speedtest,DIRECT
-- DOMAIN-SUFFIX,testflight.apple.com,苹果服务
-- DOMAIN-SUFFIX,appstoreconnect.apple.com,苹果服务
-- DOMAIN-SUFFIX,beta.itunes.apple.com,DIRECT
+- DOMAIN-SUFFIX,testflight.apple.com,节点选择
+- DOMAIN-SUFFIX,beta.itunes.apple.com,节点选择
+- DOMAIN-SUFFIX,appstoreconnect.apple.com,节点选择
+- DOMAIN-SUFFIX,itunes-apple.com.akadns.net,DIRECT
+- DOMAIN-SUFFIX,apple.com.akadns.net,DIRECT
 - DOMAIN-SUFFIX,itunes.apple.com,DIRECT
 - DOMAIN-SUFFIX,apps.apple.com,DIRECT
 - DOMAIN-SUFFIX,mzstatic.com,DIRECT
