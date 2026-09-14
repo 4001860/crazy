@@ -1426,6 +1426,15 @@ proxy-groups:
   interval: 180
   hidden: true
   icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Round_Robin.png
+- name: 良心亚太前置-自动
+  type: fallback
+  use:
+  - 节点池
+  filter: "(?i)(良心).*(\U0001F1ED\U0001F1F0|\U0001F1F9\U0001F1FC|\U0001F1EF\U0001F1F5|\U0001F1F8\U0001F1EC|香港|港|Hong|HK|台湾|台|TW|日本|日|JP|新加坡|狮城|SG)"
+  url: https://www.gstatic.com/generate_204
+  interval: 180
+  hidden: true
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Round_Robin.png
 - name: 小牛亚太前置-自动
   type: fallback
   use:
@@ -1433,6 +1442,16 @@ proxy-groups:
   filter: "(?i)(小牛|6.66|大猪头).*(\U0001F1ED\U0001F1F0|\U0001F1F9\U0001F1FC|\U0001F1EF\U0001F1F5|\U0001F1F8\U0001F1EC|香港|港|Hong|HK|台湾|台|TW|日本|日|JP|新加坡|狮城|SG)"
   url: https://www.gstatic.com/generate_204
   interval: 180
+  hidden: true
+  icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Round_Robin.png
+- name: 亚太前置-自动
+  type: smart
+  use:
+  - 节点池
+  filter: "(?i)(iplc|良心|小牛|6.66|大猪头).*(\U0001F1ED\U0001F1F0|\U0001F1F9\U0001F1FC|\U0001F1EF\U0001F1F5|\U0001F1F8\U0001F1EC|香港|港|Hong|HK|台湾|台|TW|日本|日|JP|新加坡|狮城|SG)"
+  url: https://www.gstatic.com/generate_204
+  interval: 180
+  tolerance: 100
   hidden: true
   icon: https://raw.githubusercontent.com/4001860/crazy/main/icons/Round_Robin.png
 - name: VoWiFi-检测
