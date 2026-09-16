@@ -417,6 +417,9 @@ dns:
   fake-ip-filter-mode: blacklist
 hosts:
   epdg.epc.mnc002.mcc262.pub.3gppnetwork.org: 139.7.117.170
+  us01-cf.smile2008.club: 104.18.27.217
+  us02-cf.smile2008.club: 104.18.27.217
+  us03-cf.smile2008.club: 104.18.27.217
 sniffer:
   enable: false
   sniff:
