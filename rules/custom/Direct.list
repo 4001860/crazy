@@ -475,3 +475,14 @@ DOMAIN-SUFFIX,zerotier.com
 DOMAIN-SUFFIX,imgse.com
 DOMAIN-SUFFIX,cn
 
+
+# === 百度贴吧直连 ===
+DOMAIN-SUFFIX,tieba.com
+DOMAIN-SUFFIX,tiebaimg.com
+DOMAIN-SUFFIX,tbimgs.com
+DOMAIN,tieba.baidu.com
+DOMAIN,tb.himg.baidu.com
+DOMAIN,tb1.bdstatic.com
+DOMAIN,tb2.bdstatic.com
+DOMAIN,tiebacdn.baidu.com
+DOMAIN-KEYWORD,tieba
