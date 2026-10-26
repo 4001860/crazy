@@ -592,3 +592,16 @@ DOMAIN-SUFFIX,udache.com
 DOMAIN-SUFFIX,sf-express.com
 DOMAIN-SUFFIX,sf-car.com
 DOMAIN-SUFFIX,12306.cn
+
+# === 贴吧核心与百度直连补充 ===
+USER-AGENT,tieba*
+USER-AGENT,Baidu*
+DOMAIN-SUFFIX,tieba.baidu.com
+DOMAIN-SUFFIX,tb.himg.baidu.com
+DOMAIN-SUFFIX,tiebacdn.baidu.com
+DOMAIN-SUFFIX,c.tieba.baidu.com
+DOMAIN-SUFFIX,gsp0.baidu.com
+DOMAIN-SUFFIX,himg.bdimg.com
+DOMAIN-SUFFIX,duapp.com
+DOMAIN-SUFFIX,bce.baidu.com
+DOMAIN-KEYWORD,tieba
