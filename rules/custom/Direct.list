@@ -486,3 +486,109 @@ DOMAIN,tb1.bdstatic.com
 DOMAIN,tb2.bdstatic.com
 DOMAIN,tiebacdn.baidu.com
 DOMAIN-KEYWORD,tieba
+
+
+# === 腾讯系核心生态增强 (微信/QQ/语音视频/传输) ===
+DOMAIN-SUFFIX,tenpay.com
+DOMAIN-SUFFIX,qqmail.com
+DOMAIN-SUFFIX,foxmail.com
+DOMAIN-SUFFIX,weiyun.com
+DOMAIN-SUFFIX,smtcdns.com
+DOMAIN-SUFFIX,smtcdns.net
+DOMAIN-SUFFIX,tencentyun.com
+DOMAIN-SUFFIX,tencentmind.com
+DOMAIN-SUFFIX,imqq.com
+DOMAIN-SUFFIX,myapp.com
+DOMAIN-KEYWORD,tencent
+DOMAIN-KEYWORD,qzone
+
+# === 阿里系核心生态增强 (淘宝/天猫/支付宝/高德/钉钉/闲鱼) ===
+DOMAIN-SUFFIX,alisports.com
+DOMAIN-SUFFIX,alipaydns.com
+DOMAIN-SUFFIX,1688.com
+DOMAIN-SUFFIX,dingtalkapps.com
+DOMAIN-SUFFIX,elemecdn.com
+DOMAIN-SUFFIX,xiami.com
+DOMAIN-SUFFIX,fliggy.com
+DOMAIN-SUFFIX,idlefish.com
+DOMAIN-SUFFIX,2shoujie.com
+DOMAIN-KEYWORD,aliyun
+DOMAIN-KEYWORD,dingtalk
+
+# === 字节跳动系 (抖音/今日头条/西瓜/剪映/飞书) ===
+DOMAIN-SUFFIX,bytedance.com
+DOMAIN-SUFFIX,bytedance.net
+DOMAIN-SUFFIX,byteimg.com
+DOMAIN-SUFFIX,bytescm.com
+DOMAIN-SUFFIX,bytetos.com
+DOMAIN-SUFFIX,snssdk.com
+DOMAIN-SUFFIX,toutiao.com
+DOMAIN-SUFFIX,toutiaocdn.com
+DOMAIN-SUFFIX,toutiaopage.com
+DOMAIN-SUFFIX,pstatp.com
+DOMAIN-SUFFIX,feishu.cn
+DOMAIN-SUFFIX,feishu.net
+DOMAIN-SUFFIX,feishucdn.com
+DOMAIN-SUFFIX,volccdn.com
+DOMAIN-SUFFIX,jianying.com
+DOMAIN-KEYWORD,bytedance
+DOMAIN-KEYWORD,toutiao
+DOMAIN-KEYWORD,feishu
+
+# === 百度系全面直连 (百度/网盘/地图/贴吧/文心) ===
+DOMAIN-SUFFIX,baidu.com
+DOMAIN-SUFFIX,baidubce.com
+DOMAIN-SUFFIX,baidubcr.com
+DOMAIN-SUFFIX,baidupcs.com
+DOMAIN-SUFFIX,baidupan.com
+DOMAIN-SUFFIX,baidustatic.com
+DOMAIN-SUFFIX,bdimg.com
+DOMAIN-SUFFIX,bdstatic.com
+DOMAIN-SUFFIX,hao123.com
+DOMAIN-KEYWORD,baidu
+
+# === 哔哩哔哩 (Bilibili) ===
+DOMAIN-SUFFIX,bilibili.com
+DOMAIN-SUFFIX,bilibili.tv
+DOMAIN-SUFFIX,biliapi.com
+DOMAIN-SUFFIX,biliapi.net
+DOMAIN-SUFFIX,bilivideo.com
+DOMAIN-SUFFIX,bilivideo.cn
+DOMAIN-SUFFIX,hdslb.com
+DOMAIN-SUFFIX,hdslb.net
+DOMAIN-SUFFIX,miniapp.bilibili.com
+DOMAIN-KEYWORD,bilibili
+
+# === 京东系 (JD) ===
+DOMAIN-SUFFIX,360buy.com
+DOMAIN-SUFFIX,jdl.cn
+
+# === 美团与大众点评 ===
+DOMAIN-SUFFIX,sankuai.com
+
+# === 网易生态 ===
+DOMAIN-SUFFIX,126.am
+
+# === 社交、生活与社区 (小红书/微博/知乎/快手/豆瓣/拼多多) ===
+DOMAIN-SUFFIX,xhscdn.net
+DOMAIN-SUFFIX,weibo.com
+DOMAIN-SUFFIX,weibo.cn
+DOMAIN-SUFFIX,sinaimg.cn
+DOMAIN-SUFFIX,sina.com.cn
+DOMAIN-SUFFIX,sinajs.cn
+DOMAIN-SUFFIX,zhihu.com
+DOMAIN-SUFFIX,zhimg.com
+DOMAIN-SUFFIX,kuaishou.com
+DOMAIN-SUFFIX,douban.com
+DOMAIN-SUFFIX,doubanio.com
+DOMAIN-KEYWORD,zhihu
+DOMAIN-KEYWORD,weibo
+DOMAIN-KEYWORD,xiaohongshu
+
+# === 出行、物流与地图 (高德/百度地图/滴滴/顺丰) ===
+DOMAIN-SUFFIX,didiglobal.com
+DOMAIN-SUFFIX,diditaxi.com.cn
+DOMAIN-SUFFIX,udache.com
+DOMAIN-SUFFIX,sf-express.com
+DOMAIN-SUFFIX,sf-car.com
+DOMAIN-SUFFIX,12306.cn
