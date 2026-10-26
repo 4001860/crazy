@@ -15,9 +15,9 @@ DOMAIN,pingma.qq.com
 DOMAIN,adimage.bwton.com
 DOMAIN,inner-report.shunchangzhixing.com
 DOMAIN-SUFFIX,xwuad.com
-DOMAIN-SUFFIX,bdurl.net
+# DOMAIN-SUFFIX,bdurl.net  # 注释避免误杀贴吧/百度开屏
 DOMAIN-SUFFIX,ahdohpiechei.com
-DOMAIN-KEYWORD,mobads
+# DOMAIN-KEYWORD,mobads  # 注释避免误杀贴吧/百度开屏
 DOMAIN-SUFFIX,adkwai.com
 DOMAIN-SUFFIX,1rtb.net
 DOMAIN-SUFFIX,1rtb.com
